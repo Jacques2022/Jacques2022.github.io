@@ -1,28 +1,25 @@
 ---
 layout:     post
-title:      "Hello 2015"
+title:      "Hello World"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+date:       2024-04-20 22:00:00
+author:     "H. Shen"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Meta
+    - Log
+    - Lab3
 ---
 
-> “Yeah It's on. ”
+> “Hello world!” This is 引文.
 
+# The Log Written by Hux
 
 Hux 的 Blog 就这么开通了。
 
-[跳过废话，直接看技术实现 ](#build) 
+[This is how to use interior hyper-ref.](#build) 
 
-2015 年，Hux 总算有个地方可以好好写点东西了。
-
-
-作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
-
-在玩了一段时间知乎之后，答题的快感又激起了我开博客的冲动。之前的[个人网站](http://huangxuan.me/portfolio)是作品集形式的（现在集成进来了），并不适合用来写博文，一不做二不休，花一天搞一个吧！
+This is how to use exterior hyper-ref [课题组主页](https://kenyon.xmu.edu.cn)。
 
 
 <p id = "build"></p>
@@ -70,5 +67,3 @@ Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Les
 在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。
 
 如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
-
-—— Hux 后记于 2015.10

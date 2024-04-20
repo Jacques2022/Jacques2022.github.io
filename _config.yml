@@ -75,7 +75,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "Explore the unknowns. <br> 探索未知。"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://github.com/Jacques2022/Jacques2022.github.io/blob/main/img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
