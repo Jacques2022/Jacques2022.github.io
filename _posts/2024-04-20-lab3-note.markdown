@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Hello World"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "Proposal for Lab3 Water Wave"
+subtitle:   "Lab3 的 Proposal 笔记"
 date:       2024-04-20 22:00:00
 author:     "H. Shen"
 header-img: "img/post-bg-2015.jpg"
