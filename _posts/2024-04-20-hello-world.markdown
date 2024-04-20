@@ -21,6 +21,8 @@ Hux 的 Blog 就这么开通了。
 
 This is how to use exterior hyper-ref [课题组主页](https://kenyon.xmu.edu.cn)。
 
+This is how to quote codes: `code`.
+
 
 <p id = "build"></p>
 
