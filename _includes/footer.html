@@ -239,14 +239,14 @@
         var lang = getLang()
         // en
         if (lang == "en") {
-            $select.selectedIndex = 1;
+            $select.selectedIndex = 0;
             $en.style.display = "block";
             $en.classList.add("active");
             $zh.style.display = "none";
             $zh.classList.remove("active");
-            // default to zh-cn
+            // default to en
         } else {
-            $select.selectedIndex = 0;
+            $select.selectedIndex = 1;
             $zh.style.display = "block";
             $zh.classList.add("active");
             $en.style.display = "none";
@@ -258,7 +258,7 @@
 
     // handle select change
     function onLanChange(index) {
-        if (index == 0) {
+        if (index == 1) {
             lang = "zh"
         } else {
             lang = "en"
