@@ -1,6 +1,7 @@
 Forked from [Hux Blog](https://huangxuan.me)
 ---
 [User Manual](_doc/Manual.md)
+
 Translation
 - [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
 
