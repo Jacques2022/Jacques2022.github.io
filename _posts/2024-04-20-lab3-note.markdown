@@ -13,6 +13,11 @@ tags:
 
 > The presentation on 25th April 2024.
 
-# Section 1
+# Ansys Fluent
 
-Content
+Ansys Fluent is an extremely powerful package in CFD. It has a lot of advantages comparing to some other numerical simulation software in the regime of fluid dynamics.
+
+## Wave Generator
+- Plane wave generation with multiphase mode.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wtuGZ6HaXtc?si=ciC-mV03D4_ZAdga" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
