@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "H. Shen's Homepage",
+  "short_name": "Shen Homepage",
+  "description": "Explore the unknowns.",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
