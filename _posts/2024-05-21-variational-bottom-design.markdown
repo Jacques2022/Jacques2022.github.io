@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Mechanism Design for Variational Bottom"
-subtitle:   " \"Notes for the construction for waterproof variational bottom.\""
+subtitle:   " Notes for the construction for waterproof variational bottom."
 date:       2024-05-21 12:45:00
 author:     "H. Shen"
 header-img: "img/post-bg-2015.jpg"
@@ -15,7 +15,10 @@ tags:
 In this article, we go through the procedures necessary to construct/build waterproof mechanical structure for the realization of bottom with variational depth.
 
 # Basic Ideas
-The effect should look like [this](https://www.bilibili.com/video/BV1W14y1b7Mq).<p id = "tag1"></p>
+
+<p id = "tag1"></p>
+
+The effect should look like [this](https://www.bilibili.com/video/BV1W14y1b7Mq).
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=771908203&bvid=BV1W14y1b7Mq&cid=801456559&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 The only problem is that the above design is not waterproof.
@@ -34,7 +37,9 @@ This is too easy to be perfect. **Do note that this method is merely a rough fix
 
 
 We can use the mechanism of worm drive to transfer direction of torque. Consider 45$^\circ$ worm gears, and the animation for the torque transferring mechanism is shown [below](#fig01).
-![Torque Transferring in Right Angle](/img/in-post/2024-05-21-variational-bottom-design/fig01.gif)<p id = "fig01"></p>
+![Torque Transferring in Right Angle](/img/in-post/2024-05-21-variational-bottom-design/fig01.gif)
+
+<p id = "fig01"></p>
 
 
 For each unit block, we can apply this mechanism two times to move the motors from below the block to its adjacent higher than the water surface. However, it shall take large amount of space. Don't worry about the overlapping problem when it comes to multiple rows and columns of the unit blocks. The rows do not interfere with each other naturally, and we can assemble the worms layer by layer to deal with different columns. $\textcolor{red}{\text{Need to design in Solidworks later.}}$
