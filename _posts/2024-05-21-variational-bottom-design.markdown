@@ -19,7 +19,7 @@ In this article, we go through the procedures necessary to construct/build water
 <p id = "tag1"></p>
 
 The effect should look like [this](https://www.bilibili.com/video/BV1W14y1b7Mq).
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=771908203&bvid=BV1W14y1b7Mq&cid=801456559&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=771908203&bvid=BV1W14y1b7Mq&cid=801456559&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 The only problem is that the above design is not waterproof.
 
