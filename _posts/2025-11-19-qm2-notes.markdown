@@ -636,7 +636,7 @@ $$
 i\hbar \dot{c}_b(t) = \sum_n c_n(t) H'_{bn}(t) e^{i\omega_{bn}t},
 $$
 
-where \(H'_{bn}(t) = \langle b \vert  \hat{H}'(t) \vert  n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar\).
+where \(H'\_{bn}(t) = \langle b \vert  \hat{H}'(t) \vert  n \rangle\) and \(\omega_{bn} = (E_b - E_n)/\hbar\).
 
 **First-Order Approximation:**
 Assuming the system starts in a specific initial state $\vert a\rangle$ at $t=0$, we have $c_a(0) = 1$ and $c_b(0) = 0$ for $b \neq a$. For weak perturbations, the populations do not change significantly over short times, so we approximate $c_n(t) \approx \delta_{na}$ on the right-hand side. The first-order equation for the coefficient of a target state $\vert b\rangle$ becomes,
