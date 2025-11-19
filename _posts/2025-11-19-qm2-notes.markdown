@@ -48,32 +48,32 @@ These findings led to the core concept of **Wave-Particle Duality**: Objects exh
 ### 1.2. Mathematical Framework: Hilbert Space
 
 Quantum mechanics is formulated in **Hilbert Space**, a complex vector space with an inner product.
-* **State Vectors (Kets):** A physical state is represented by a vector $\vert\psi\rangle$ (a "ket"). For a finite-dimensional space (like spin), it can be written as a column vector,
+* **State Vectors (Kets):** A physical state is represented by a vector $\vert \psi\rangle$ (a "ket"). For a finite-dimensional space (like spin), it can be written as a column vector,
 
     $$
-    \vert\psi\rangle = \begin{pmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}.
+    \vert \psi\rangle = \begin{pmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}.
     $$
 
-* **Dual Vectors (Bras):** The Hermitian conjugate of a ket is a "bra" $\langle \psi \vert = (\vert\psi\rangle)^\dagger$. It is a row vector with complex-conjugated entries,
+* **Dual Vectors (Bras):** The Hermitian conjugate of a ket is a "bra" $\langle \psi \vert  = (\vert \psi\rangle)^\dagger$. It is a row vector with complex-conjugated entries,
 
     $$
-    \langle \psi \vert = (c_1^*, c_2^*, \dots, c_n^*).
+    \langle \psi \vert  = (c_1^*, c_2^*, \dots, c_n^*).
     $$
 
-* **Inner Product:** The inner product $\langle \phi \vert \psi \rangle$ is a complex number, generalizing the dot product. It satisfies $\langle \phi \vert \psi \rangle = \langle \psi \vert \phi \rangle^*$.
+* **Inner Product:** The inner product $\langle \phi \vert  \psi \rangle$ is a complex number, generalizing the dot product. It satisfies $\langle \phi \vert  \psi \rangle = \langle \psi \vert  \phi \rangle^*$.
 
     $$
-    \langle \phi \vert \psi \rangle = \sum_{i} b_i^* c_i.
+    \langle \phi \vert  \psi \rangle = \sum_{i} b_i^* c_i.
     $$
 
-* **Norm:** The norm is $\\vert\psi\\vert = \sqrt{\langle \psi \vert \psi \rangle}$. Physical states are normalized such that $\langle \psi \vert \psi \rangle = 1$.
-* **Orthogonality:** Two vectors are orthogonal if their inner product is zero: $\langle \phi \vert \psi \rangle = 0$.
-* **Orthonormal Basis:** A set of vectors $\{\verte_i\rangle\}$ forms an orthonormal basis if $\langle e_i \vert e_j \rangle = \delta_{ij}$. Any state can be expanded in this basis: $\vert\psi\rangle = \sum_i c_i \verte_i\rangle$, where $c_i = \langle e_i \vert \psi \rangle$.
+* **Norm:** The norm is $\\vert \psi\\vert  = \sqrt{\langle \psi \vert  \psi \rangle}$. Physical states are normalized such that $\langle \psi \vert  \psi \rangle = 1$.
+* **Orthogonality:** Two vectors are orthogonal if their inner product is zero: $\langle \phi \vert  \psi \rangle = 0$.
+* **Orthonormal Basis:** A set of vectors $\{\vert e_i\rangle\}$ forms an orthonormal basis if $\langle e_i \vert  e_j \rangle = \delta_{ij}$. Any state can be expanded in this basis: $\vert \psi\rangle = \sum_i c_i \vert e_i\rangle$, where $c_i = \langle e_i \vert  \psi \rangle$.
 
 ### 1.3. Operators and Observables
 
 Physical observables (energy, momentum, spin) are represented by **linear operators** acting on the Hilbert space.
-* **Matrix Representation:** In a chosen basis, an operator $\hat{A}$ is represented by a matrix with elements $A_{ij} = \langle e_i \vert \hat{A} \vert e_j \rangle$.
+* **Matrix Representation:** In a chosen basis, an operator $\hat{A}$ is represented by a matrix with elements $A_{ij} = \langle e_i \vert  \hat{A} \vert  e_j \rangle$.
 * **Hermitian Operators:** An operator is Hermitian (or self-adjoint) if $\hat{A}^\dagger = \hat{A}$. This is crucial because:
     1.  **Real Eigenvalues:** The eigenvalues of a Hermitian operator are real numbers, corresponding to possible measurement results.
     2.  **Orthogonal Eigenvectors:** Eigenvectors corresponding to distinct eigenvalues are orthogonal.
@@ -87,44 +87,44 @@ The order of operations matters. The commutator is defined as $[\hat{A}, \hat{B}
 ### 1.4. The Postulates of Quantum Mechanics
 
 **Postulate 1 (State):**
-The state of an isolated physical system is described by a normalized vector $\vert\psi\rangle$ in a Hilbert space.
+The state of an isolated physical system is described by a normalized vector $\vert \psi\rangle$ in a Hilbert space.
 
 **Postulate 2 (Observables):**
 Every physical observable corresponds to a Hermitian operator $\hat{A}$ acting on the Hilbert space.
 
 **Postulate 3 (Measurement):**
 The possible outcomes of a measurement of observable $\hat{A}$ are its eigenvalues $a_n$.
-* If the system is in state $\vert\psi\rangle$, the probability of obtaining outcome $a_n$ is given by the **Born Rule**:
+* If the system is in state $\vert \psi\rangle$, the probability of obtaining outcome $a_n$ is given by the **Born Rule**:
 
     $$
-    P(a_n) = \vert\langle a_n \vert \psi \rangle\vert^2,
+    P(a_n) = \vert \langle a_n \vert  \psi \rangle\vert ^2,
     $$
 
-    where $\verta_n\rangle$ is the normalized eigenstate corresponding to $a_n$.
-* **Collapse:** Immediately after the measurement yields $a_n$, the system's state collapses to $\verta_n\rangle$.
-* **Expectation Value:** The average value of many measurements on identically prepared systems is $\langle A \rangle = \langle \psi \vert \hat{A} \vert \psi \rangle$.
+    where $\vert a_n\rangle$ is the normalized eigenstate corresponding to $a_n$.
+* **Collapse:** Immediately after the measurement yields $a_n$, the system's state collapses to $\vert a_n\rangle$.
+* **Expectation Value:** The average value of many measurements on identically prepared systems is $\langle A \rangle = \langle \psi \vert  \hat{A} \vert  \psi \rangle$.
 
 **Postulate 4 (Time Evolution):**
 The time evolution of the state vector is governed by the **Schrödinger Equation**,
 
 $$
-i\hbar \frac{\partial}{\partial t} \vert\psi(t)\rangle = \hat{H} \vert\psi(t)\rangle,
+i\hbar \frac{\partial}{\partial t} \vert \psi(t)\rangle = \hat{H} \vert \psi(t)\rangle,
 $$
 
 where $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
-* For a time-independent Hamiltonian, the solution is $\vert\psi(t)\rangle = e^{-i\hat{H}t/\hbar} \vert\psi(0)\rangle$.
-* In the energy eigenbasis, if $\vert\psi(0)\rangle = \sum_n c_n \vertE_n\rangle$, then $\vert\psi(t)\rangle = \sum_n c_n e^{-iE_n t/\hbar} \vertE_n\rangle$.
+* For a time-independent Hamiltonian, the solution is $\vert \psi(t)\rangle = e^{-i\hat{H}t/\hbar} \vert \psi(0)\rangle$.
+* In the energy eigenbasis, if $\vert \psi(0)\rangle = \sum_n c_n \vert E_n\rangle$, then $\vert \psi(t)\rangle = \sum_n c_n e^{-iE_n t/\hbar} \vert E_n\rangle$.
 
 ### 1.5. Continuous Variables: Position and Momentum
 
 For continuous degrees of freedom like position $x$ and momentum $p$:
-* **Basis Kets:** Position states $\vertx\rangle$ and momentum states $\vertp\rangle$ are continuous bases normalized to the Dirac delta function,
+* **Basis Kets:** Position states $\vert x\rangle$ and momentum states $\vert p\rangle$ are continuous bases normalized to the Dirac delta function,
 
     $$
-    \langle x \vert x' \rangle = \delta(x - x'), \quad \langle p \vert p' \rangle = \delta(p - p').
+    \langle x \vert  x' \rangle = \delta(x - x'), \quad \langle p \vert  p' \rangle = \delta(p - p').
     $$
 
-* **Wavefunctions:** The state $\vert\psi\rangle$ is represented by a wavefunction $\psi(x) = \langle x \vert \psi \rangle$ (position space) or $\tilde{\psi}(p) = \langle p \vert \psi \rangle$ (momentum space).
+* **Wavefunctions:** The state $\vert \psi\rangle$ is represented by a wavefunction $\psi(x) = \langle x \vert  \psi \rangle$ (position space) or $\tilde{\psi}(p) = \langle p \vert  \psi \rangle$ (momentum space).
 * **Operators in Position Space:**
 
     $$
@@ -144,7 +144,7 @@ For continuous degrees of freedom like position $x$ and momentum $p$:
 The fundamental limit on the precision of simultaneous measurements of incompatible observables is given by the **Robertson Uncertainty Relation**:
 
 $$
-\sigma_A \sigma_B \ge \frac{1}{2} \vert\langle [\hat{A}, \hat{B}] \rangle\vert,
+\sigma_A \sigma_B \ge \frac{1}{2} \vert \langle [\hat{A}, \hat{B}] \rangle\vert ,
 $$
 
 where $\sigma_A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2}$ is the standard deviation.
@@ -182,10 +182,10 @@ $$
 \lambda_{\pm} = \frac{1}{2} \left( h_0 \pm \sqrt{h_1^2 + h_2^2 + h_3^2} \right).
 $$
 
-The eigenvector corresponding to $\lambda_+$ is parameterized by the Bloch vector $\vec{s} = \vec{h} / \vert\vec{h}\vert$. In terms of spherical angles $(\theta, \phi)$, it reads
+The eigenvector corresponding to $\lambda_+$ is parameterized by the Bloch vector $\vec{s} = \vec{h} / \vert \vec{h}\vert $. In terms of spherical angles $(\theta, \phi)$, it reads
 
 $$
-\vert\psi_+\rangle = \cos\frac{\theta}{2}\vert0\rangle + e^{i\phi}\sin\frac{\theta}{2}\vert1\rangle.
+\vert \psi_+\rangle = \cos\frac{\theta}{2}\vert 0\rangle + e^{i\phi}\sin\frac{\theta}{2}\vert 1\rangle.
 $$
 
 
@@ -208,20 +208,20 @@ $$
 [\hat{J}^2, \hat{J}_k] = 0.
 $$
 
-Consequently, we can construct a simultaneous eigenbasis for the operators $\hat{J}^2$ and one component, conventionally chosen as $\hat{J}_z$. We denote these eigenstates by $\vertj, m\rangle$, where $j$ characterizes the total angular momentum and $m$ characterizes the projection onto the $z$-axis. The eigenvalue equations are,
+Consequently, we can construct a simultaneous eigenbasis for the operators $\hat{J}^2$ and one component, conventionally chosen as $\hat{J}_z$. We denote these eigenstates by $\vert j, m\rangle$, where $j$ characterizes the total angular momentum and $m$ characterizes the projection onto the $z$-axis. The eigenvalue equations are,
 
 $$
-\hat{J}^2 \vertj, m\rangle = \hbar^2 j(j+1) \vertj, m\rangle,
+\hat{J}^2 \vert j, m\rangle = \hbar^2 j(j+1) \vert j, m\rangle,
 $$
 
 $$
-\hat{J}_z \vertj, m\rangle = \hbar m \vertj, m\rangle.
+\hat{J}_z \vert j, m\rangle = \hbar m \vert j, m\rangle.
 $$
 
 To determine the allowed spectrum of $j$ and $m$, we introduce the ladder operators $\hat{J}_\pm = \hat{J}_x \pm i\hat{J}_y$. These operators act on the eigenstates as,
 
 $$
-\hat{J}_\pm \vertj, m\rangle = \hbar \sqrt{j(j+1) - m(m\pm 1)} \vertj, m\pm 1\rangle.
+\hat{J}_\pm \vert j, m\rangle = \hbar \sqrt{j(j+1) - m(m\pm 1)} \vert j, m\pm 1\rangle.
 $$
 
 From the condition that the norm of the state must be non-negative, specifically $\langle \hat{J}^2 - \hat{J}_z^2 \rangle \ge 0$, we derive the constraints on the quantum numbers: the quantum number $j$ must be a non-negative integer or half-integer, and $m$ ranges from $-j$ to $+j$ in integer steps.
@@ -271,13 +271,13 @@ $$
 This total operator $\hat{\vec{J}}$ satisfies the standard commutation relations, implying that the composite system is also an angular momentum system. The eigenstates of the total angular momentum are characterized by the quantum numbers $j$ and $m$, where $j$ can take values in the range,
 
 $$
-\vertj_1 - j_2\vert \le j \le j_1 + j_2.
+\vert j_1 - j_2\vert  \le j \le j_1 + j_2.
 $$
 
-The eigenstates $\vertj, m\rangle$ are linear combinations of the product basis $\vertj_1, m_1\rangle \vertj_2, m_2\rangle$. The coefficients of this expansion are the **Clebsch-Gordan coefficients**,
+The eigenstates $\vert j, m\rangle$ are linear combinations of the product basis $\vert j_1, m_1\rangle \vert j_2, m_2\rangle$. The coefficients of this expansion are the **Clebsch-Gordan coefficients**,
 
 $$
-\vertj, m\rangle = \sum_{m_1, m_2} C_{m_1 m_2 m}^{j_1 j_2 j} \vertj_1, m_1\rangle \vertj_2, m_2\rangle.
+\vert j, m\rangle = \sum_{m_1, m_2} C_{m_1 m_2 m}^{j_1 j_2 j} \vert j_1, m_1\rangle \vert j_2, m_2\rangle.
 $$
 
 #### 2.4.1. Addition of Two Spin-1/2 Particles
@@ -288,9 +288,9 @@ These states are symmetric under particle exchange.
 
 $$
 \begin{aligned}
-\vert1, 1\rangle &= \vert\uparrow\rangle \vert\uparrow\rangle, \\
-\vert1, 0\rangle &= \frac{1}{\sqrt{2}} (\vert\uparrow\rangle \vert\downarrow\rangle + \vert\downarrow\rangle \vert\uparrow\rangle), \\
-\vert1, -1\rangle &= \vert\downarrow\rangle \vert\downarrow\rangle.
+\vert 1, 1\rangle &= \vert \uparrow\rangle \vert \uparrow\rangle, \\
+\vert 1, 0\rangle &= \frac{1}{\sqrt{2}} (\vert \uparrow\rangle \vert \downarrow\rangle + \vert \downarrow\rangle \vert \uparrow\rangle), \\
+\vert 1, -1\rangle &= \vert \downarrow\rangle \vert \downarrow\rangle.
 \end{aligned}
 $$
 
@@ -300,7 +300,7 @@ Applying the $\hat{S}^2$ operator to these states yields the eigenvalue $1(1+1)\
 This state is antisymmetric under particle exchange.
 
 $$
-\vert0, 0\rangle = \frac{1}{\sqrt{2}} (\vert\uparrow\rangle \vert\downarrow\rangle - \vert\downarrow\rangle \vert\uparrow\rangle).
+\vert 0, 0\rangle = \frac{1}{\sqrt{2}} (\vert \uparrow\rangle \vert \downarrow\rangle - \vert \downarrow\rangle \vert \uparrow\rangle).
 $$
 
 Applying $\hat{S}^2$ yields the eigenvalue $0(0+1)\hbar^2 = 0$. This distinction between symmetric (triplet) and antisymmetric (singlet) spin configurations is fundamental to the structure of multi-electron atoms and the nature of chemical bonding.
@@ -311,18 +311,18 @@ Applying $\hat{S}^2$ yields the eigenvalue $0(0+1)\hbar^2 = 0$. This distinction
 
 ### 3.1. Quantum Superposition and Tensor Products
 
-The principle of linear superposition, central to the description of single quantum systems, extends naturally to composite systems. For a single two-level system, any superposition $\alpha_0\vert0\rangle + \alpha_1\vert1\rangle$ constitutes a valid state. Analogously, for a composite system of two qubits, the superposition principle dictates that any linear combination of the basis states is a valid physical state,
+The principle of linear superposition, central to the description of single quantum systems, extends naturally to composite systems. For a single two-level system, any superposition $\alpha_0\vert 0\rangle + \alpha_1\vert 1\rangle$ constitutes a valid state. Analogously, for a composite system of two qubits, the superposition principle dictates that any linear combination of the basis states is a valid physical state,
 
 $$
-\vert\Psi_{12}\rangle = \alpha_{00}\vert00\rangle + \alpha_{01}\vert01\rangle + \alpha_{10}\vert10\rangle + \alpha_{11}\vert11\rangle.
+\vert \Psi_{12}\rangle = \alpha_{00}\vert 00\rangle + \alpha_{01}\vert 01\rangle + \alpha_{10}\vert 10\rangle + \alpha_{11}\vert 11\rangle.
 $$
 
 The mathematical framework for describing such composite spaces is the tensor product. If $\mathcal{H}_1$ and $\mathcal{H}_2$ are the Hilbert spaces of two individual systems, the joint space is $\mathcal{H}_{12} = \mathcal{H}_1 \otimes \mathcal{H}_2$.
 
-The tensor product of vectors is defined component-wise. If $\vert\psi_1\rangle = (\alpha_1, \beta_1)^T$ and $\vert\psi_2\rangle = (\alpha_2, \beta_2)^T$, their tensor product is,
+The tensor product of vectors is defined component-wise. If $\vert \psi_1\rangle = (\alpha_1, \beta_1)^T$ and $\vert \psi_2\rangle = (\alpha_2, \beta_2)^T$, their tensor product is,
 
 $$
-\vert\psi_1\rangle \otimes \vert\psi_2\rangle = \begin{pmatrix} \alpha_1 \\ \beta_1 \end{pmatrix} \otimes \begin{pmatrix} \alpha_2 \\ \beta_2 \end{pmatrix} = \begin{pmatrix} \alpha_1 \alpha_2 \\ \alpha_1 \beta_2 \\ \beta_1 \alpha_2 \\ \beta_1 \beta_2 \end{pmatrix}.
+\vert \psi_1\rangle \otimes \vert \psi_2\rangle = \begin{pmatrix} \alpha_1 \\ \beta_1 \end{pmatrix} \otimes \begin{pmatrix} \alpha_2 \\ \beta_2 \end{pmatrix} = \begin{pmatrix} \alpha_1 \alpha_2 \\ \alpha_1 \beta_2 \\ \beta_1 \alpha_2 \\ \beta_1 \beta_2 \end{pmatrix}.
 $$
 
 Operators on the composite space also follow the tensor product structure. For operators $A$ and $B$ acting on $\mathcal{H}_1$ and $\mathcal{H}_2$ respectively, the operation $A \otimes B$ is represented by the block matrix,
@@ -339,21 +339,21 @@ $$
 
 ### 3.2. Pure State Entanglement
 
-A pure state $\vert\psi_{12}\rangle \in \mathcal{H}_{12}$ is strictly defined as **separable** (or a product state) if it can be factorized into the form $\vert\psi_{12}\rangle = \vert\psi_1\rangle \otimes \vert\psi_2\rangle$. Any state that cannot be written in this form is **entangled**.
+A pure state $\vert \psi_{12}\rangle \in \mathcal{H}_{12}$ is strictly defined as **separable** (or a product state) if it can be factorized into the form $\vert \psi_{12}\rangle = \vert \psi_1\rangle \otimes \vert \psi_2\rangle$. Any state that cannot be written in this form is **entangled**.
 
 The canonical examples of entanglement in bipartite qubit systems are the Bell states, which form an orthonormal basis for $\mathcal{H}_{12}$,
 
 $$
-\vert\phi^{\pm}\rangle = \frac{1}{\sqrt{2}}(\vert00\rangle \pm \vert11\rangle), \quad \vert\psi^{\pm}\rangle = \frac{1}{\sqrt{2}}(\vert01\rangle \pm \vert10\rangle).
+\vert \phi^{\pm}\rangle = \frac{1}{\sqrt{2}}(\vert 00\rangle \pm \vert 11\rangle), \quad \vert \psi^{\pm}\rangle = \frac{1}{\sqrt{2}}(\vert 01\rangle \pm \vert 10\rangle).
 $$
 
 To rigorously determine if a general pure state is entangled, one employs the **Schmidt decomposition**. Any pure bipartite state can be decomposed as,
 
 $$
-\vert\psi_{AB}\rangle = \sum_{i=1}^{\min(d_A, d_B)} \sqrt{\lambda_i} \, \vertu_i\rangle_A \otimes \vertv_i\rangle_B,
+\vert \psi_{AB}\rangle = \sum_{i=1}^{\min(d_A, d_B)} \sqrt{\lambda_i} \, \vert u_i\rangle_A \otimes \vert v_i\rangle_B,
 $$
 
-where $\sqrt{\lambda_i}$ are the Schmidt coefficients (satisfying $\sum \lambda_i = 1$), and $\{\vertu_i\rangle\}$ and $\{\vertv_i\rangle\}$ are orthonormal bases for subsystems $A$ and $B$. The entanglement criterion is straightforward: a pure state is entangled if and only if its Schmidt rank (the number of non-zero $\lambda_i$) is greater than one.
+where $\sqrt{\lambda_i}$ are the Schmidt coefficients (satisfying $\sum \lambda_i = 1$), and $\{\vert u_i\rangle\}$ and $\{\vert v_i\rangle\}$ are orthonormal bases for subsystems $A$ and $B$. The entanglement criterion is straightforward: a pure state is entangled if and only if its Schmidt rank (the number of non-zero $\lambda_i$) is greater than one.
 
 ### 3.3. Mixed State Entanglement
 
@@ -363,13 +363,13 @@ $$
 \rho_{\text{sep}} = \sum_j p_j \, \rho_j \otimes \eta_j,
 $$
 
-where $p_j \ge 0$ and $\sum p_j = 1$. If no such decomposition exists, the state is entangled. It is important to distinguish entanglement from purity; the maximally mixed state $\frac{1}{4}\mathbb{I}$ is separable, whereas the pure singlet state $\vert\psi^-\rangle$ is maximally entangled.
+where $p_j \ge 0$ and $\sum p_j = 1$. If no such decomposition exists, the state is entangled. It is important to distinguish entanglement from purity; the maximally mixed state $\frac{1}{4}\mathbb{I}$ is separable, whereas the pure singlet state $\vert \psi^-\rangle$ is maximally entangled.
 
 **The Partial Transposition (PPT) Criterion**
 Detecting entanglement in mixed states is generally non-trivial. However, for systems of dimension $2 \times 2$ and $2 \times 3$, the Peres-Horodecki criterion provides a necessary and sufficient condition. The partial transpose of $\rho$ with respect to subsystem $B$, denoted $\rho^{\Gamma_B}$, is defined by its action on the basis elements,
 
 $$
-\left( \verti\rangle\langle j\vert \otimes \vertk\rangle\langle l\vert \right)^{\Gamma_B} \equiv \verti\rangle\langle j\vert \otimes (\vertk\rangle\langle l\vert)^T = \verti\rangle\langle j\vert \otimes \vertl\rangle\langle k\vert.
+\left( \vert i\rangle\langle j\vert  \otimes \vert k\rangle\langle l\vert  \right)^{\Gamma_B} \equiv \vert i\rangle\langle j\vert  \otimes (\vert k\rangle\langle l\vert )^T = \vert i\rangle\langle j\vert  \otimes \vert l\rangle\langle k\vert .
 $$
 
 In terms of matrix elements, this operation swaps the indices of the second subsystem: $(\rho^{\Gamma_B})_{ij,kl} = \rho_{ij,lk}$.
@@ -380,16 +380,16 @@ In terms of matrix elements, this operation swaps the indices of the second subs
 When an observer has access only to a subsystem (say, Alice with system $A$) of a composite state $\rho_{AB}$, her local description is given by the reduced density matrix $\rho_A$. This is obtained via the partial trace operation,
 
 $$
-\rho_A = \text{Tr}_B(\rho_{AB}) = \sum_b \langle b\vert_B \, \rho_{AB} \, \vertb\rangle_B,
+\rho_A = \text{Tr}_B(\rho_{AB}) = \sum_b \langle b\vert _B \, \rho_{AB} \, \vert b\rangle_B,
 $$
 
-where $\{\vertb\rangle\}$ is an orthonormal basis for system $B$. This operation corresponds to averaging over all possible measurement outcomes of system $B$.
+where $\{\vert b\rangle\}$ is an orthonormal basis for system $B$. This operation corresponds to averaging over all possible measurement outcomes of system $B$.
 
 A fundamental feature of this formalism is the "peaceful coexistence" of quantum mechanics and special relativity. The probability of any outcome for a measurement performed by Alice is determined solely by $\rho_A$. Since $\rho_A$ is invariant under unitary operations or measurements performed by Bob on system $B$ (a consequence of the trace property), Bob cannot use entanglement to signal Alice instantaneously.
 
 There is a direct link between marginal purity and entanglement:
-* If a pure state $\vert\psi_{AB}\rangle$ is a product state, its marginals $\rho_A$ and $\rho_B$ are pure states ($\text{Tr}(\rho^2)=1$).
-* If $\vert\psi_{AB}\rangle$ is entangled, its marginals are mixed states ($\text{Tr}(\rho^2)<1$).
+* If a pure state $\vert \psi_{AB}\rangle$ is a product state, its marginals $\rho_A$ and $\rho_B$ are pure states ($\text{Tr}(\rho^2)=1$).
+* If $\vert \psi_{AB}\rangle$ is entangled, its marginals are mixed states ($\text{Tr}(\rho^2)<1$).
 
 ### 3.5. Correlations and the Generalized Bloch Representation
 
@@ -405,14 +405,14 @@ $$
 C(\vec{n}_1, \dots, \vec{n}_N) = \langle (\vec{n}_1 \cdot \vec{\sigma}) \otimes \dots \otimes (\vec{n}_N \cdot \vec{\sigma}) \rangle = \sum_{\mu_1 \dots \mu_N} T_{\mu_1 \dots \mu_N} n_1^{\mu_1} \dots n_N^{\mu_N}.
 $$
 
-For the singlet state $\vert\psi^-\rangle$, the correlation function is $C(\vec{a}, \vec{b}) = -\vec{a} \cdot \vec{b}$. This implies perfect anti-correlation regardless of the measurement basis, provided both observers measure along the same direction. A known condition for separability is $\sum_{j,k=1}^3 T_{jk}^2 \le 1$. The singlet state violates this bound maximally ($\sum T_{jk}^2 = 3$), serving as a quantitative witness of its entanglement.
+For the singlet state $\vert \psi^-\rangle$, the correlation function is $C(\vec{a}, \vec{b}) = -\vec{a} \cdot \vec{b}$. This implies perfect anti-correlation regardless of the measurement basis, provided both observers measure along the same direction. A known condition for separability is $\sum_{j,k=1}^3 T_{jk}^2 \le 1$. The singlet state violates this bound maximally ($\sum T_{jk}^2 = 3$), serving as a quantitative witness of its entanglement.
 
 ### 3.6. Multipartite Entanglement and Activation
 
 As the number of particles $N$ increases, the classification of entanglement becomes richer.
 1.  **Fully Separable:** The state can be written as $\rho = \sum_k p_k \rho_k^{(1)} \otimes \dots \otimes \rho_k^{(N)}$.
-2.  **Bi-separable:** The state is separable with respect to some partition (e.g., $A\vertBC$ is separable, but $BC$ is entangled), but not fully separable.
-3.  **Genuinely Multipartite Entangled:** The state does not factorize across any partition (e.g., GHZ states $\vert000\rangle + \vert111\rangle$ or W states $\vert001\rangle + \vert010\rangle + \vert100\rangle$).
+2.  **Bi-separable:** The state is separable with respect to some partition (e.g., $A\vert BC$ is separable, but $BC$ is entangled), but not fully separable.
+3.  **Genuinely Multipartite Entangled:** The state does not factorize across any partition (e.g., GHZ states $\vert 000\rangle + \vert 111\rangle$ or W states $\vert 001\rangle + \vert 010\rangle + \vert 100\rangle$).
 
 An intriguing phenomenon in multipartite systems is **entanglement activation**. It is possible to take multiple copies of a bi-separable state (which contains no genuine multipartite entanglement) and, using only Local Operations and Classical Communication (LOCC), distill a state that possesses genuine multipartite entanglement.
 
@@ -425,7 +425,7 @@ An intriguing phenomenon in multipartite systems is **entanglement activation**.
 The quantum description of two interacting particles is governed by the Hamiltonian,
 
 $$
-H = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{\hbar^2}{2m_2}\nabla_2^2 + V(\vert\vec{r}_1 - \vec{r}_2\vert).
+H = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{\hbar^2}{2m_2}\nabla_2^2 + V(\vert \vec{r}_1 - \vec{r}_2\vert ).
 $$
 
 Analogous to classical mechanics, this problem can be simplified by transforming to center-of-mass ($\vec{R}$) and relative ($\vec{r}$) coordinates,
@@ -459,7 +459,7 @@ $$
 The symmetry requirements of the wavefunction lead to effective spatial correlations known as exchange forces. For two particles in states $\psi_a$ and $\psi_b$, the expectation value of the squared separation distance is,
 
 $$
-\langle (\Delta x)^2 \rangle_{\pm} = \langle (\Delta x)^2 \rangle_{dist} \mp 2 \vert\langle x \rangle_{ab}\vert^2,
+\langle (\Delta x)^2 \rangle_{\pm} = \langle (\Delta x)^2 \rangle_{dist} \mp 2 \vert \langle x \rangle_{ab}\vert ^2,
 $$
 
 where $\langle x \rangle_{ab}$ is the overlap integral $\int x \psi_a^*(x)\psi_b(x) dx$.
@@ -478,12 +478,12 @@ In a hydrogenic potential, energy depends only on the principal quantum number $
 The ground state configuration of an atom is described by a Term Symbol $^{2S+1}L_J$. To determine the ground state term for a given electron configuration:
 1.  **Hund's First Rule:** Maximize the total spin $S$ (consistent with the Pauli principle). This minimizes Coulomb repulsion by keeping electrons in antisymmetric spatial states (farther apart).
 2.  **Hund's Second Rule:** For a given $S$, maximize the total orbital angular momentum $L$.
-3.  **Hund's Third Rule:** For shells less than half-full, $J = \vertL-S\vert$ (lowest energy). For shells more than half-full, $J = L+S$.
+3.  **Hund's Third Rule:** For shells less than half-full, $J = \vert L-S\vert $ (lowest energy). For shells more than half-full, $J = L+S$.
 
 *Example (Carbon):* The configuration is $1s^2 2s^2 2p^2$. The two $2p$ electrons can form $L=0, 1, 2$ and $S=0, 1$.
 * Maximize $S \to S=1$ (Triplet).
 * Pauli constraint on $p^2$ triplet requires antisymmetric spatial part $\to L=1$ (since $L=2,0$ are symmetric).
-* Shell is less than half full $\to J = \vert1-1\vert = 0$.
+* Shell is less than half full $\to J = \vert 1-1\vert  = 0$.
 * Ground State Term: $^3P_0$.
 
 ### 4.5. Molecular Geometry
@@ -501,65 +501,65 @@ Quantum mechanics also explains molecular shapes through orbital alignment. For 
 Perturbation theory provides a systematic method for approximating the eigenvalues and eigenstates of a Hamiltonian $\hat{H}$ that can be decomposed into a solvable part $\hat{H}^0$ and a small perturbation $\hat{H}'$, such that $\hat{H} = \hat{H}^0 + \lambda \hat{H}'$, where $\lambda$ is a dimensionless parameter ranging from 0 to 1. We assume the eigensystem of the unperturbed Hamiltonian is known,
 
 $$
-\hat{H}^0 \vertn^0\rangle = E_n^0 \vertn^0\rangle,
+\hat{H}^0 \vert n^0\rangle = E_n^0 \vert n^0\rangle,
 $$
 
-where the set $\{\vertn^0\rangle\}$ forms a complete orthonormal basis, satisfying $\langle m^0 \vert n^0 \rangle = \delta_{mn}$. We seek approximate solutions to the full eigenvalue problem $\hat{H} \vert\psi_n\rangle = E_n \vert\psi_n\rangle$ by expanding the energy eigenvalues and eigenstates as power series in $\lambda$,
+where the set $\{\vert n^0\rangle\}$ forms a complete orthonormal basis, satisfying $\langle m^0 \vert  n^0 \rangle = \delta_{mn}$. We seek approximate solutions to the full eigenvalue problem $\hat{H} \vert \psi_n\rangle = E_n \vert \psi_n\rangle$ by expanding the energy eigenvalues and eigenstates as power series in $\lambda$,
 
 $$
 \begin{aligned}
 E_n &= E_n^0 + \lambda E_n^1 + \lambda^2 E_n^2 + \dots \\
-\vert\psi_n\rangle &= \vertn^0\rangle + \lambda \vertn^1\rangle + \lambda^2 \vertn^2\rangle + \dots
+\vert \psi_n\rangle &= \vert n^0\rangle + \lambda \vert n^1\rangle + \lambda^2 \vert n^2\rangle + \dots
 \end{aligned}
 $$
 
 Substituting these expansions into the Schrödinger equation and collecting terms of equal power in $\lambda$ yields a hierarchy of linear equations.
-* **Order $\lambda^0$:** $\hat{H}^0 \vertn^0\rangle = E_n^0 \vertn^0\rangle$ (The unperturbed problem).
-* **Order $\lambda^1$:** $\hat{H}^0 \vertn^1\rangle + \hat{H}' \vertn^0\rangle = E_n^0 \vertn^1\rangle + E_n^1 \vertn^0\rangle$.
-* **Order $\lambda^2$:** $\hat{H}^0 \vertn^2\rangle + \hat{H}' \vertn^1\rangle = E_n^0 \vertn^2\rangle + E_n^1 \vertn^1\rangle + E_n^2 \vertn^0\rangle$.
+* **Order $\lambda^0$:** $\hat{H}^0 \vert n^0\rangle = E_n^0 \vert n^0\rangle$ (The unperturbed problem).
+* **Order $\lambda^1$:** $\hat{H}^0 \vert n^1\rangle + \hat{H}' \vert n^0\rangle = E_n^0 \vert n^1\rangle + E_n^1 \vert n^0\rangle$.
+* **Order $\lambda^2$:** $\hat{H}^0 \vert n^2\rangle + \hat{H}' \vert n^1\rangle = E_n^0 \vert n^2\rangle + E_n^1 \vert n^1\rangle + E_n^2 \vert n^0\rangle$.
 
 ### 5.2. Non-Degenerate Perturbation Theory
 
 For a non-degenerate energy level $E_n^0$, the corrections are derived by projecting the $\lambda$-ordered equations onto the unperturbed basis states.
 
 **First-Order Corrections:**
-Taking the inner product of the first-order equation with $\langle n^0\vert$ gives the first-order energy correction,
+Taking the inner product of the first-order equation with $\langle n^0\vert $ gives the first-order energy correction,
 
 $$
-E_n^1 = \langle n^0 \vert \hat{H}' \vert n^0 \rangle.
+E_n^1 = \langle n^0 \vert  \hat{H}' \vert  n^0 \rangle.
 $$
 
-This result states that the first-order shift is simply the expectation value of the perturbation in the unperturbed state. To find the first-order state correction $\vertn^1\rangle$, we project the first-order equation onto $\langle m^0\vert$ (where $m \neq n$),
+This result states that the first-order shift is simply the expectation value of the perturbation in the unperturbed state. To find the first-order state correction $\vert n^1\rangle$, we project the first-order equation onto $\langle m^0\vert $ (where $m \neq n$),
 
 $$
-\vertn^1\rangle = \sum_{m \neq n} \frac{\langle m^0 \vert \hat{H}' \vert n^0 \rangle}{E_n^0 - E_m^0} \vertm^0\rangle.
+\vert n^1\rangle = \sum_{m \neq n} \frac{\langle m^0 \vert  \hat{H}' \vert  n^0 \rangle}{E_n^0 - E_m^0} \vert m^0\rangle.
 $$
 
 This formula is valid provided $E_n^0 \neq E_m^0$ for all $m \neq n$, highlighting the necessity of non-degeneracy.
 
 **Second-Order Energy Correction:**
-Taking the inner product of the second-order equation with $\langle n^0\vert$ yields,
+Taking the inner product of the second-order equation with $\langle n^0\vert $ yields,
 
 $$
-E_n^2 = \langle n^0 \vert \hat{H}' \vert n^1 \rangle = \sum_{m \neq n} \frac{\vert\langle m^0 \vert \hat{H}' \vert n^0 \rangle\vert^2}{E_n^0 - E_m^0}.
+E_n^2 = \langle n^0 \vert  \hat{H}' \vert  n^1 \rangle = \sum_{m \neq n} \frac{\vert \langle m^0 \vert  \hat{H}' \vert  n^0 \rangle\vert ^2}{E_n^0 - E_m^0}.
 $$
 
 This term captures the effect of level repulsion: energy levels repel each other, with the ground state energy always being lowered in second-order perturbation theory.
 
 ### 5.3. Degenerate Perturbation Theory
 
-If the unperturbed energy level $E_n^0$ is $g$-fold degenerate, the denominator in the non-degenerate state expansion vanishes, indicating a breakdown of the method. Let $D$ be the subspace spanned by the $g$ degenerate orthonormal eigenstates $\{\vertn^0_1\rangle, \dots, \vertn^0_g\rangle\}$.
+If the unperturbed energy level $E_n^0$ is $g$-fold degenerate, the denominator in the non-degenerate state expansion vanishes, indicating a breakdown of the method. Let $D$ be the subspace spanned by the $g$ degenerate orthonormal eigenstates $\{\vert n^0_1\rangle, \dots, \vert n^0_g\rangle\}$.
 Any linear combination within $D$ is an eigenstate of $\hat{H}^0$ with eigenvalue $E_n^0$. The perturbation $\hat{H}'$ typically lifts this degeneracy. To find the split energy levels and the correct "good" zeroth-order eigenstates, we must diagonalize $\hat{H}'$ within the degenerate subspace.
 
 We construct the perturbation matrix $W$ with elements,
 
 $$
-W_{ij} = \langle n^0_i \vert \hat{H}' \vert n^0_j \rangle, \quad i, j = 1, \dots, g.
+W_{ij} = \langle n^0_i \vert  \hat{H}' \vert  n^0_j \rangle, \quad i, j = 1, \dots, g.
 $$
 
 Solving the eigenvalue problem for $W$ yields $g$ eigenvalues, which correspond to the first-order energy corrections $E_{n, \alpha}^1$ for the split levels. The eigenvectors of $W$ define the basis states in $D$ that are stable under the perturbation.
 
-**Theorem:** If there exists a Hermitian operator $\hat{A}$ such that $[\hat{A}, \hat{H}'] = 0$ and $[\hat{A}, \hat{H}^0] = 0$, and if the degenerate states $\{\vertn^0_i\rangle\}$ are distinct eigenstates of $\hat{A}$, then the matrix $W$ is automatically diagonal. These simultaneous eigenstates are the correct zeroth-order states for perturbation theory.
+**Theorem:** If there exists a Hermitian operator $\hat{A}$ such that $[\hat{A}, \hat{H}'] = 0$ and $[\hat{A}, \hat{H}^0] = 0$, and if the degenerate states $\{\vert n^0_i\rangle\}$ are distinct eigenstates of $\hat{A}$, then the matrix $W$ is automatically diagonal. These simultaneous eigenstates are the correct zeroth-order states for perturbation theory.
 
 ### 5.4. Application: The Fine Structure of Hydrogen
 
@@ -572,7 +572,7 @@ $$
 \hat{H}'_{rel} = -\frac{\hat{p}^4}{8m^3 c^2}.
 $$
 
-The energy shift is calculated using first-order perturbation theory on the hydrogenic states $\vertn, l, m\rangle$.
+The energy shift is calculated using first-order perturbation theory on the hydrogenic states $\vert n, l, m\rangle$.
 
 **Spin-Orbit Coupling:**
 From the rest frame of the electron, the nucleus orbits around it, generating a magnetic field $\vec{B}$ that interacts with the electron's spin magnetic moment. This interaction is described by,
@@ -582,7 +582,7 @@ $$
 $$
 
 This term does not commute with $\hat{\vec{L}}$ or $\hat{\vec{S}}$ separately, but it does commute with the total angular momentum $\hat{\vec{J}} = \hat{\vec{L}} + \hat{\vec{S}}$. We use the identity $\hat{\vec{L}} \cdot \hat{\vec{S}} = \frac{1}{2} (\hat{\vec{J}}^2 - \hat{\vec{L}}^2 - \hat{\vec{S}}^2)$ to evaluate the expectation values.
-Combining both corrections yields the total fine-structure energy shift for state $\vertn, j\rangle$,
+Combining both corrections yields the total fine-structure energy shift for state $\vert n, j\rangle$,
 
 $$
 E_{fs}^1 = \frac{(E_n^0)^2}{2mc^2} \left( 3 - \frac{4n}{j+1/2} \right).
@@ -624,22 +624,22 @@ This linear splitting differs significantly from the weak-field regime, recoveri
 
 ### 6.1. General Formalism
 
-In time-dependent perturbation theory, we consider a Hamiltonian $\hat{H}(t) = \hat{H}^0 + \hat{H}'(t)$, where $\hat{H}^0$ is the time-independent unperturbed Hamiltonian with known eigenstates $\vertn\rangle$ and eigenvalues $E_n$. The time-dependent perturbation $\hat{H}'(t)$ is assumed to be small. We expand the general state $\vert\Psi(t)\rangle$ in the basis of the unperturbed eigenstates, with time-dependent coefficients $c_n(t)$,
+In time-dependent perturbation theory, we consider a Hamiltonian $\hat{H}(t) = \hat{H}^0 + \hat{H}'(t)$, where $\hat{H}^0$ is the time-independent unperturbed Hamiltonian with known eigenstates $\vert n\rangle$ and eigenvalues $E_n$. The time-dependent perturbation $\hat{H}'(t)$ is assumed to be small. We expand the general state $\vert \Psi(t)\rangle$ in the basis of the unperturbed eigenstates, with time-dependent coefficients $c_n(t)$,
 
 $$
-\vert\Psi(t)\rangle = \sum_n c_n(t) e^{-iE_n t / \hbar} \vertn\rangle.
+\vert \Psi(t)\rangle = \sum_n c_n(t) e^{-iE_n t / \hbar} \vert n\rangle.
 $$
 
-Substituting this ansatz into the time-dependent Schrödinger equation $i\hbar \frac{\partial}{\partial t} \vert\Psi(t)\rangle = \hat{H}(t) \vert\Psi(t)\rangle$ and projecting onto a specific state $\langle b\vert$, we obtain a set of coupled differential equations for the coefficients,
+Substituting this ansatz into the time-dependent Schrödinger equation $i\hbar \frac{\partial}{\partial t} \vert \Psi(t)\rangle = \hat{H}(t) \vert \Psi(t)\rangle$ and projecting onto a specific state $\langle b\vert $, we obtain a set of coupled differential equations for the coefficients,
 
 $$
 i\hbar \dot{c}_b(t) = \sum_n c_n(t) H'_{bn}(t) e^{i\omega_{bn}t},
 $$
 
-where $H'_{bn}(t) = \langle b \vert \hat{H}'(t) \vert n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar$.
+where $H'_{bn}(t) = \langle b \vert  \hat{H}'(t) \vert  n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar$.
 
 **First-Order Approximation:**
-Assuming the system starts in a specific initial state $\verta\rangle$ at $t=0$, we have $c_a(0) = 1$ and $c_b(0) = 0$ for $b \neq a$. For weak perturbations, the populations do not change significantly over short times, so we approximate $c_n(t) \approx \delta_{na}$ on the right-hand side. The first-order equation for the coefficient of a target state $\vertb\rangle$ becomes,
+Assuming the system starts in a specific initial state $\vert a\rangle$ at $t=0$, we have $c_a(0) = 1$ and $c_b(0) = 0$ for $b \neq a$. For weak perturbations, the populations do not change significantly over short times, so we approximate $c_n(t) \approx \delta_{na}$ on the right-hand side. The first-order equation for the coefficient of a target state $\vert b\rangle$ becomes,
 
 $$
 \dot{c}_b(t) \approx -\frac{i}{\hbar} H'_{ba}(t) e^{i\omega_{ba}t}.
@@ -651,7 +651,7 @@ $$
 c_b^{(1)}(t) = -\frac{i}{\hbar} \int_0^t H'_{ba}(t') e^{i\omega_{ba}t'} dt'.
 $$
 
-The transition probability from state $\verta\rangle$ to state $\vertb\rangle$ is then $P_{a \to b}(t) = \vertc_b^{(1)}(t)\vert^2$.
+The transition probability from state $\vert a\rangle$ to state $\vert b\rangle$ is then $P_{a \to b}(t) = \vert c_b^{(1)}(t)\vert ^2$.
 
 ### 6.2. Sinusoidal Perturbation and Fermi's Golden Rule
 
@@ -664,13 +664,13 @@ $$
 Near resonance, where the driving frequency $\omega$ is close to the transition frequency $\omega_{ba} = (E_b - E_a)/\hbar$, the second term (involving the small denominator $\omega_{ba} - \omega$) dominates. This is known as the **Rotating Wave Approximation**. Neglecting the first term, the transition probability is,
 
 $$
-P_{a \to b}(t) \approx \frac{\vertV_{ba}\vert^2}{\hbar^2} \frac{\sin^2[(\omega_{ba} - \omega)t/2]}{(\omega_{ba} - \omega)^2}.
+P_{a \to b}(t) \approx \frac{\vert V_{ba}\vert ^2}{\hbar^2} \frac{\sin^2[(\omega_{ba} - \omega)t/2]}{(\omega_{ba} - \omega)^2}.
 $$
 
 This function is peaked at $\omega = \omega_{ba}$ with a height proportional to $t^2$ and a width proportional to $1/t$. For large times, the function $\frac{\sin^2(xt)}{x^2} \to \pi t \delta(x)$, leading to **Fermi's Golden Rule** for the transition rate $R$,
 
 $$
-R_{a \to b} = \lim_{t \to \infty} \frac{P_{a \to b}(t)}{t} = \frac{2\pi}{\hbar} \vertV_{ba}\vert^2 \delta(E_b - E_a - \hbar\omega).
+R_{a \to b} = \lim_{t \to \infty} \frac{P_{a \to b}(t)}{t} = \frac{2\pi}{\hbar} \vert V_{ba}\vert ^2 \delta(E_b - E_a - \hbar\omega).
 $$
 
 ### 6.3. Two-Level Systems and Rabi Oscillations
@@ -681,13 +681,13 @@ $$
 i\dot{c}_a = \frac{V_{ab}^*}{2\hbar} e^{i\Delta t} c_b, \quad i\dot{c}_b = \frac{V_{ba}}{2\hbar} e^{-i\Delta t} c_a.
 $$
 
-The solution for a system starting in the ground state $\verta\rangle$ describes oscillations in the population of the excited state $\vertb\rangle$:
+The solution for a system starting in the ground state $\vert a\rangle$ describes oscillations in the population of the excited state $\vert b\rangle$:
 
 $$
 P_{a \to b}(t) = \frac{\Omega^2}{\Omega^2 + \Delta^2} \sin^2\left( \frac{\sqrt{\Omega^2 + \Delta^2}}{2} t \right),
 $$
 
-where $\Omega = \vertV_{ba}\vert/\hbar$ is the **Rabi Frequency**.
+where $\Omega = \vert V_{ba}\vert /\hbar$ is the **Rabi Frequency**.
 * **On Resonance ($\Delta = 0$):** The system undergoes full contrast oscillations between ground and excited states: $P_{a \to b}(t) = \sin^2(\Omega t/2)$.
 * **Off Resonance ($\Delta \neq 0$):** The amplitude of oscillation decreases and the frequency increases ("generalized Rabi frequency"). The system never fully reaches the excited state.
 
@@ -696,10 +696,10 @@ where $\Omega = \vertV_{ba}\vert/\hbar$ is the **Rabi Frequency**.
 We apply time-dependent perturbation theory to the interaction of an atom with incoherent, broadband electromagnetic radiation (like thermal light). The transition rate for stimulated emission or absorption is given by,
 
 $$
-R_{b \to a} = R_{a \to b} = \frac{\pi}{3\epsilon_0 \hbar^2} \vert\vec{d}\vert^2 \rho(\omega_0),
+R_{b \to a} = R_{a \to b} = \frac{\pi}{3\epsilon_0 \hbar^2} \vert \vec{d}\vert ^2 \rho(\omega_0),
 $$
 
-where $\vec{d} = \langle b \vert q\vec{r} \vert a \rangle$ is the electric dipole moment and $\rho(\omega_0)$ is the spectral energy density of the field at the transition frequency.
+where $\vec{d} = \langle b \vert  q\vec{r} \vert  a \rangle$ is the electric dipole moment and $\rho(\omega_0)$ is the spectral energy density of the field at the transition frequency.
 
 Einstein derived the relationship between the rates of absorption ($B_{ab}$), stimulated emission ($B_{ba}$), and spontaneous emission ($A$) by considering atoms in thermal equilibrium with blackbody radiation.
 * **Detailed Balance:** $N_a B_{ab} \rho(\omega) = N_b A + N_b B_{ba} \rho(\omega)$.
@@ -708,7 +708,7 @@ Einstein derived the relationship between the rates of absorption ($B_{ab}$), st
 
 Combining these yields the Einstein relations $B_{ab} = B_{ba}$ and the spontaneous emission rate coefficient $A$:
 $$
-A = \frac{\omega_0^3 \vert\vec{d}\vert^2}{3\pi\epsilon_0 \hbar c^3}.
+A = \frac{\omega_0^3 \vert \vec{d}\vert ^2}{3\pi\epsilon_0 \hbar c^3}.
 $$
 This formula quantifies the rate at which an excited atom decays to the ground state in the absence of any external field, a phenomenon explained fundamentally by the coupling of the atom to vacuum fluctuations of the electromagnetic field.
 
