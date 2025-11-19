@@ -317,7 +317,7 @@ $$
 \vert \Psi_{12}\rangle = \alpha_{00}\vert 00\rangle + \alpha_{01}\vert 01\rangle + \alpha_{10}\vert 10\rangle + \alpha_{11}\vert 11\rangle.
 $$
 
-The mathematical framework for describing such composite spaces is the tensor product. If $\mathcal{H}_1$ and $\mathcal{H}_2$ are the Hilbert spaces of two individual systems, the joint space is $\mathcal{H}_{12} = \mathcal{H}_1 \otimes \mathcal{H}_2$.
+The mathematical framework for describing such composite spaces is the tensor product. If $\mathcal{H}\_1$ and $\mathcal{H}\_2$ are the Hilbert spaces of two individual systems, the joint space is $\mathcal{H}\_{12} = \mathcal{H}\_1 \otimes \mathcal{H}\_2$.
 
 The tensor product of vectors is defined component-wise. If $\vert \psi_1\rangle = (\alpha_1, \beta_1)^T$ and $\vert \psi_2\rangle = (\alpha_2, \beta_2)^T$, their tensor product is,
 
@@ -339,7 +339,7 @@ $$
 
 ### 3.2. Pure State Entanglement
 
-A pure state $\vert \psi_{12}\rangle \in \mathcal{H}_{12}$ is strictly defined as **separable** (or a product state) if it can be factorized into the form $\vert \psi_{12}\rangle = \vert \psi_1\rangle \otimes \vert \psi_2\rangle$. Any state that cannot be written in this form is **entangled**.
+A pure state $\vert \psi\_{12}\rangle \in \mathcal{H}\_{12}$ is strictly defined as **separable** (or a product state) if it can be factorized into the form $\vert \psi\_{12}\rangle = \vert \psi\_1\rangle \otimes \vert \psi\_2\rangle$. Any state that cannot be written in this form is **entangled**.
 
 The canonical examples of entanglement in bipartite qubit systems are the Bell states, which form an orthonormal basis for $\mathcal{H}_{12}$,
 
@@ -592,7 +592,7 @@ The total energy levels are given by $E_{nj} = E_n^0 [1 + \frac{\alpha^2}{n^2} (
 
 ### 5.5. Application: The Zeeman Effect
 
-The Zeeman effect describes the splitting of atomic energy levels in an external magnetic field $\vec{B}_{ext} = B_{ext} \hat{z}$. The interaction Hamiltonian is,
+The Zeeman effect describes the splitting of atomic energy levels in an external magnetic field $\vec{B}\_{ext} = B\_{ext} \hat{z}$. The interaction Hamiltonian is,
 
 $$
 \hat{H}'_Z = -(\vec{\mu}_l + \vec{\mu}_s) \cdot \vec{B}_{ext} = \frac{e B_{ext}}{2m} (\hat{L}_z + 2\hat{S}_z).
@@ -601,7 +601,7 @@ $$
 The nature of the splitting depends on the strength of $B_{ext}$ relative to the internal magnetic field of the atom ($B_{int}$) responsible for spin-orbit coupling.
 
 **Weak-Field Zeeman Effect ($B_{ext} \ll B_{int}$):**
-The fine structure dominates. The good quantum numbers are $n, l, j, m_j$. The Zeeman term is treated as a perturbation on the fine-structure states. Since $\hat{L}_z + 2\hat{S}_z = \hat{J}_z + \hat{S}_z$, we project $\hat{S}_z$ onto $\hat{J}_z$ using the Wigner-Eckart theorem (or the vector model projection $\vec{S}_{avg} = \frac{(\vec{S}\cdot\vec{J})}{J^2}\vec{J}$). The energy shift is,
+The fine structure dominates. The good quantum numbers are $n, l, j, m_j$. The Zeeman term is treated as a perturbation on the fine-structure states. Since \(\hat{L}_z + 2\hat{S}_z = \hat{J}_z + \hat{S}_z\), we project $\hat{S}_z$ onto $\hat{J}_z$ using the Wigner-Eckart theorem (or the vector model projection \(\vec{S}_{avg} = \frac{(\vec{S}\cdot\vec{J})}{J^2}\vec{J}\)). The energy shift is,
 
 $$
 E_Z^1 = \mu_B g_J B_{ext} m_j,
@@ -636,7 +636,7 @@ $$
 i\hbar \dot{c}_b(t) = \sum_n c_n(t) H'_{bn}(t) e^{i\omega_{bn}t},
 $$
 
-where $H'_{bn}(t) = \langle b \vert  \hat{H}'(t) \vert  n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar$.
+where \(H'_{bn}(t) = \langle b \vert  \hat{H}'(t) \vert  n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar\).
 
 **First-Order Approximation:**
 Assuming the system starts in a specific initial state $\vert a\rangle$ at $t=0$, we have $c_a(0) = 1$ and $c_b(0) = 0$ for $b \neq a$. For weak perturbations, the populations do not change significantly over short times, so we approximate $c_n(t) \approx \delta_{na}$ on the right-hand side. The first-order equation for the coefficient of a target state $\vert b\rangle$ becomes,
@@ -655,7 +655,7 @@ The transition probability from state $\vert a\rangle$ to state $\vert b\rangle$
 
 ### 6.2. Sinusoidal Perturbation and Fermi's Golden Rule
 
-Consider a perturbation that oscillates sinusoidally in time, $\hat{H}'(t) = \hat{V} \cos(\omega t)$, which is turned on at $t=0$. The matrix element is $H'_{ba}(t) = V_{ba} \cos(\omega t)$. The transition amplitude becomes,
+Consider a perturbation that oscillates sinusoidally in time, $\hat{H}'(t) = \hat{V} \cos(\omega t)$, which is turned on at $t=0$. The matrix element is \(H'_{ba}(t) = V_{ba} \cos(\omega t)\). The transition amplitude becomes,
 
 $$
 c_b(t) = -\frac{V_{ba}}{2\hbar} \left[ \frac{e^{i(\omega_{ba} + \omega)t} - 1}{\omega_{ba} + \omega} + \frac{e^{i(\omega_{ba} - \omega)t} - 1}{\omega_{ba} - \omega} \right].
