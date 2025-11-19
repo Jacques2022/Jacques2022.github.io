@@ -655,13 +655,13 @@ The transition probability from state $\vert a\rangle$ to state $\vert b\rangle$
 
 ### 6.2. Sinusoidal Perturbation and Fermi's Golden Rule
 
-Consider a perturbation that oscillates sinusoidally in time, $\hat{H}'(t) = \hat{V} \cos(\omega t)$, which is turned on at $t=0$. The matrix element is \(H'_{ba}(t) = V_{ba} \cos(\omega t)\). The transition amplitude becomes,
+Consider a perturbation that oscillates sinusoidally in time, $\hat{H}'(t) = \hat{V} \cos(\omega t)$, which is turned on at $t=0$. The matrix element is \(H'\_{ba}(t) = V_{ba} \cos(\omega t)\). The transition amplitude becomes,
 
 $$
 c_b(t) = -\frac{V_{ba}}{2\hbar} \left[ \frac{e^{i(\omega_{ba} + \omega)t} - 1}{\omega_{ba} + \omega} + \frac{e^{i(\omega_{ba} - \omega)t} - 1}{\omega_{ba} - \omega} \right].
 $$
 
-Near resonance, where the driving frequency $\omega$ is close to the transition frequency $\omega_{ba} = (E_b - E_a)/\hbar$, the second term (involving the small denominator $\omega_{ba} - \omega$) dominates. This is known as the **Rotating Wave Approximation**. Neglecting the first term, the transition probability is,
+Near resonance, where the driving frequency $\omega$ is close to the transition frequency $\omega_{ba} = (E_b - E_a)/\hbar$, the second term (involving the small denominator $\( \omega_{ba} - \omega \)$) dominates. This is known as the **Rotating Wave Approximation**. Neglecting the first term, the transition probability is,
 
 $$
 P_{a \to b}(t) \approx \frac{\vert V_{ba}\vert ^2}{\hbar^2} \frac{\sin^2[(\omega_{ba} - \omega)t/2]}{(\omega_{ba} - \omega)^2}.
