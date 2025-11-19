@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "A Crash Course in Quantum Mechanics"
-subtitle:   "Lab3 的 Proposal 笔记"
+subtitle:   "A revision note for QM exams."
 date:       2025-11-19 14:35:08
 author:     "H. Shen"
 header-img: "img/post-bg-xmum.jpg"
@@ -12,7 +12,7 @@ tags:
     - Note
 ---
 
-> If one hates something in physics, one must be ...
+> In physics, we only hate what we don't understand. Clarity eventually leads to love. ———— Dr. K. W. Song
 
 # A Crash Course in Quantum Mechanics
 
