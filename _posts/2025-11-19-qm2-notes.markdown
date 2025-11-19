@@ -10,7 +10,6 @@ tags:
     - Physics
     - Quantum
     - Note
-mathjax:    true
 ---
 
 > In physics, we only hate what we don't understand. Clarity eventually leads to love.  
@@ -49,18 +48,24 @@ These findings led to the core concept of **Wave-Particle Duality**: Objects exh
 ### 1.2. Mathematical Framework: Hilbert Space
 
 Quantum mechanics is formulated in **Hilbert Space**, a complex vector space with an inner product.
-* **State Vectors (Kets):** A physical state is represented by a vector $|\psi\rangle$ (a "ket"). For a finite-dimensional space (like spin), it can be written as a column vector:
+* **State Vectors (Kets):** A physical state is represented by a vector $|\psi\rangle$ (a "ket"). For a finite-dimensional space (like spin), it can be written as a column vector,
+
     $$
     |\psi\rangle = \begin{pmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}.
     $$
-* **Dual Vectors (Bras):** The Hermitian conjugate of a ket is a "bra" $\langle \psi | = (|\psi\rangle)^\dagger$. It is a row vector with complex-conjugated entries:
+
+* **Dual Vectors (Bras):** The Hermitian conjugate of a ket is a "bra" $\langle \psi | = (|\psi\rangle)^\dagger$. It is a row vector with complex-conjugated entries,
+
     $$
     \langle \psi | = (c_1^*, c_2^*, \dots, c_n^*).
     $$
+
 * **Inner Product:** The inner product $\langle \phi | \psi \rangle$ is a complex number, generalizing the dot product. It satisfies $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$.
+
     $$
     \langle \phi | \psi \rangle = \sum_{i} b_i^* c_i.
     $$
+
 * **Norm:** The norm is $\|\psi\| = \sqrt{\langle \psi | \psi \rangle}$. Physical states are normalized such that $\langle \psi | \psi \rangle = 1$.
 * **Orthogonality:** Two vectors are orthogonal if their inner product is zero: $\langle \phi | \psi \rangle = 0$.
 * **Orthonormal Basis:** A set of vectors $\{|e_i\rangle\}$ forms an orthonormal basis if $\langle e_i | e_j \rangle = \delta_{ij}$. Any state can be expanded in this basis: $|\psi\rangle = \sum_i c_i |e_i\rangle$, where $c_i = \langle e_i | \psi \rangle$.
@@ -90,18 +95,22 @@ Every physical observable corresponds to a Hermitian operator $\hat{A}$ acting o
 **Postulate 3 (Measurement):**
 The possible outcomes of a measurement of observable $\hat{A}$ are its eigenvalues $a_n$.
 * If the system is in state $|\psi\rangle$, the probability of obtaining outcome $a_n$ is given by the **Born Rule**:
+
     $$
     P(a_n) = |\langle a_n | \psi \rangle|^2,
     $$
+
     where $|a_n\rangle$ is the normalized eigenstate corresponding to $a_n$.
 * **Collapse:** Immediately after the measurement yields $a_n$, the system's state collapses to $|a_n\rangle$.
 * **Expectation Value:** The average value of many measurements on identically prepared systems is $\langle A \rangle = \langle \psi | \hat{A} | \psi \rangle$.
 
 **Postulate 4 (Time Evolution):**
-The time evolution of the state vector is governed by the **Schrödinger Equation**:
+The time evolution of the state vector is governed by the **Schrödinger Equation**,
+
 $$
 i\hbar \frac{\partial}{\partial t} |\psi(t)\rangle = \hat{H} |\psi(t)\rangle,
 $$
+
 where $\hat{H}$ is the Hamiltonian operator representing the total energy of the system.
 * For a time-independent Hamiltonian, the solution is $|\psi(t)\rangle = e^{-i\hat{H}t/\hbar} |\psi(0)\rangle$.
 * In the energy eigenbasis, if $|\psi(0)\rangle = \sum_n c_n |E_n\rangle$, then $|\psi(t)\rangle = \sum_n c_n e^{-iE_n t/\hbar} |E_n\rangle$.
@@ -109,53 +118,75 @@ where $\hat{H}$ is the Hamiltonian operator representing the total energy of the
 ### 1.5. Continuous Variables: Position and Momentum
 
 For continuous degrees of freedom like position $x$ and momentum $p$:
-* **Basis Kets:** Position states $|x\rangle$ and momentum states $|p\rangle$ are continuous bases normalized to the Dirac delta function:
+* **Basis Kets:** Position states $|x\rangle$ and momentum states $|p\rangle$ are continuous bases normalized to the Dirac delta function,
+
     $$
     \langle x | x' \rangle = \delta(x - x'), \quad \langle p | p' \rangle = \delta(p - p').
     $$
+
 * **Wavefunctions:** The state $|\psi\rangle$ is represented by a wavefunction $\psi(x) = \langle x | \psi \rangle$ (position space) or $\tilde{\psi}(p) = \langle p | \psi \rangle$ (momentum space).
 * **Operators in Position Space:**
+
     $$
     \hat{x} \to x, \quad \hat{p} \to -i\hbar \frac{\partial}{\partial x}.
     $$
+
 * **Canonical Commutation Relation:**
+
     $$
     [\hat{x}, \hat{p}] = i\hbar \mathbb{I}.
     $$
+
     This non-zero commutator implies they are incompatible observables.
 
 ### 1.6. The Uncertainty Principle
 
 The fundamental limit on the precision of simultaneous measurements of incompatible observables is given by the **Robertson Uncertainty Relation**:
+
 $$
 \sigma_A \sigma_B \ge \frac{1}{2} |\langle [\hat{A}, \hat{B}] \rangle|,
 $$
+
 where $\sigma_A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2}$ is the standard deviation.
 
 For position and momentum, substituting $[\hat{x}, \hat{p}] = i\hbar$ yields the famous **Heisenberg Uncertainty Principle**:
+
 $$
 \sigma_x \sigma_p \ge \frac{\hbar}{2}.
 $$
+
 This implies that the more precisely a particle's position is known, the less precisely its momentum can be known, and vice versa. This is not a measurement error, but an intrinsic property of quantum systems.
 
 ### 1.7. The Ehrenfest Theorem
 
 The connection to classical mechanics is recovered for expectation values. The time evolution of expectation values follows laws analogous to classical equations of motion:
+
 $$
 \frac{d}{dt}\langle \hat{x} \rangle = \frac{\langle \hat{p} \rangle}{m}, \quad \frac{d}{dt}\langle \hat{p} \rangle = \langle -\nabla V(\hat{x}) \rangle.
 $$
+
 These equations show that the *average* motion of a quantum wave packet follows a classical trajectory, provided the potential does not vary too rapidly over the width of the packet.
 
 ### 1.8. A Shortcut: The 2x2 Eigenproblem
 For two-level systems (qubits), any Hamiltonian can be decomposed into Pauli matrices,
-$$H = \frac{1}{2} \sum_{\mu=0}^3 h_\mu \sigma_\mu = \frac{1}{2} (h_0 \mathbb{I} + \vec{h} \cdot \vec{\sigma}),$$
+
+$$
+H = \frac{1}{2} \sum_{\mu=0}^3 h_\mu \sigma_\mu = \frac{1}{2} (h_0 \mathbb{I} + \vec{h} \cdot \vec{\sigma}),
+$$
+
 where $h_\mu = \text{Tr}(H \sigma_\mu)$.
 
 The eigenvalues are given immediately by
-$$\lambda_{\pm} = \frac{1}{2} \left( h_0 \pm \sqrt{h_1^2 + h_2^2 + h_3^2} \right).$$
+
+$$
+\lambda_{\pm} = \frac{1}{2} \left( h_0 \pm \sqrt{h_1^2 + h_2^2 + h_3^2} \right).
+$$
 
 The eigenvector corresponding to $\lambda_+$ is parameterized by the Bloch vector $\vec{s} = \vec{h} / |\vec{h}|$. In terms of spherical angles $(\theta, \phi)$, it reads
-$$|\psi_+\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\phi}\sin\frac{\theta}{2}|1\rangle.$$
+
+$$
+|\psi_+\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\phi}\sin\frac{\theta}{2}|1\rangle.
+$$
 
 
 
@@ -166,48 +197,65 @@ $$|\psi_+\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\phi}\sin\frac{\theta}{2}
 ### 2.1. General Formalism and Commutation Relations
 
 In quantum mechanics, angular momentum is defined not by a specific representation, but by the fundamental commutation relations satisfied by its vector components. Let $\hat{\vec{J}}$ denote a general angular momentum operator. Its Cartesian components must satisfy,
+
 $$
 [\hat{J}_j, \hat{J}_k] = i\hbar \epsilon_{jkl} \hat{J}_l,
 $$
+
 where $\epsilon_{jkl}$ is the Levi-Civita symbol. The magnitude of the angular momentum is given by the operator $\hat{J}^2 = \hat{J}_x^2 + \hat{J}_y^2 + \hat{J}_z^2$. It follows from the commutation relations that $\hat{J}^2$ commutes with all components,
+
 $$
 [\hat{J}^2, \hat{J}_k] = 0.
 $$
+
 Consequently, we can construct a simultaneous eigenbasis for the operators $\hat{J}^2$ and one component, conventionally chosen as $\hat{J}_z$. We denote these eigenstates by $|j, m\rangle$, where $j$ characterizes the total angular momentum and $m$ characterizes the projection onto the $z$-axis. The eigenvalue equations are,
+
 $$
 \hat{J}^2 |j, m\rangle = \hbar^2 j(j+1) |j, m\rangle,
 $$
+
 $$
 \hat{J}_z |j, m\rangle = \hbar m |j, m\rangle.
 $$
+
 To determine the allowed spectrum of $j$ and $m$, we introduce the ladder operators $\hat{J}_\pm = \hat{J}_x \pm i\hat{J}_y$. These operators act on the eigenstates as,
+
 $$
 \hat{J}_\pm |j, m\rangle = \hbar \sqrt{j(j+1) - m(m\pm 1)} |j, m\pm 1\rangle.
 $$
+
 From the condition that the norm of the state must be non-negative, specifically $\langle \hat{J}^2 - \hat{J}_z^2 \rangle \ge 0$, we derive the constraints on the quantum numbers: the quantum number $j$ must be a non-negative integer or half-integer, and $m$ ranges from $-j$ to $+j$ in integer steps.
 
 ### 2.2. Orbital Angular Momentum
 
 The orbital angular momentum $\hat{\vec{L}}$ corresponds to the classical vector $\vec{r} \times \vec{p}$. In the position representation, the operator takes the form,
+
 $$
 \hat{\vec{L}} = -i\hbar (\vec{r} \times \nabla).
 $$
+
 Expressing this in spherical coordinates reveals that $\hat{\vec{L}}$ depends solely on the angles $\theta$ and $\phi$,
+
 $$
 \hat{L}_z = -i\hbar \frac{\partial}{\partial \phi},
 $$
+
 $$
 \hat{L}^2 = -\hbar^2 \left[ \frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta \frac{\partial}{\partial \theta}\right) + \frac{1}{\sin^2\theta}\frac{\partial^2}{\partial \phi^2} \right].
 $$
+
 The eigenfunctions of these operators are the spherical harmonics, $Y_l^m(\theta, \phi)$, which form an orthonormal basis for functions on the sphere. They satisfy,
+
 $$
 \hat{L}^2 Y_l^m(\theta, \phi) = \hbar^2 l(l+1) Y_l^m(\theta, \phi), \quad \hat{L}_z Y_l^m(\theta, \phi) = \hbar m Y_l^m(\theta, \phi).
 $$
+
 Explicitly, the first few spherical harmonics are $Y_{00} = \frac{1}{\sqrt{4\pi}}$ and $Y_{10} = \sqrt{\frac{3}{4\pi}}\cos\theta$.
 
 ### 2.3. Spin Angular Momentum
 
 Spin, denoted by $\hat{\vec{S}}$, represents an intrinsic degree of freedom with no classical analogue. It satisfies the standard angular momentum commutation relations. For the specific case of spin-1/2 particles (such as electrons), the quantum number is $s=1/2$, and the magnetic quantum number $m_s$ takes values $\pm 1/2$. The operators are represented by the $2 \times 2$ Pauli matrices, $\hat{\vec{S}} = \frac{\hbar}{2}\vec{\sigma}$, where,
+
 $$
 \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
 $$
@@ -215,14 +263,19 @@ $$
 ### 2.4. Addition of Angular Momenta
 
 Consider a composite system formed by two angular momenta, $\hat{\vec{J}}_1$ and $\hat{\vec{J}}_2$. The total angular momentum is defined as the vector sum,
+
 $$
 \hat{\vec{J}} = \hat{\vec{J}}_1 \otimes \mathbb{I} + \mathbb{I} \otimes \hat{\vec{J}}_2.
 $$
+
 This total operator $\hat{\vec{J}}$ satisfies the standard commutation relations, implying that the composite system is also an angular momentum system. The eigenstates of the total angular momentum are characterized by the quantum numbers $j$ and $m$, where $j$ can take values in the range,
+
 $$
 |j_1 - j_2| \le j \le j_1 + j_2.
 $$
+
 The eigenstates $|j, m\rangle$ are linear combinations of the product basis $|j_1, m_1\rangle |j_2, m_2\rangle$. The coefficients of this expansion are the **Clebsch-Gordan coefficients**,
+
 $$
 |j, m\rangle = \sum_{m_1, m_2} C_{m_1 m_2 m}^{j_1 j_2 j} |j_1, m_1\rangle |j_2, m_2\rangle.
 $$
@@ -232,6 +285,7 @@ A crucial application is the addition of two spin-1/2 particles (e.g., two elect
 
 **The Triplet States ($S=1$):**
 These states are symmetric under particle exchange.
+
 $$
 \begin{aligned}
 |1, 1\rangle &= |\uparrow\rangle |\uparrow\rangle, \\
@@ -239,13 +293,16 @@ $$
 |1, -1\rangle &= |\downarrow\rangle |\downarrow\rangle.
 \end{aligned}
 $$
+
 Applying the $\hat{S}^2$ operator to these states yields the eigenvalue $1(1+1)\hbar^2 = 2\hbar^2$.
 
 **The Singlet State ($S=0$):**
 This state is antisymmetric under particle exchange.
+
 $$
 |0, 0\rangle = \frac{1}{\sqrt{2}} (|\uparrow\rangle |\downarrow\rangle - |\downarrow\rangle |\uparrow\rangle).
 $$
+
 Applying $\hat{S}^2$ yields the eigenvalue $0(0+1)\hbar^2 = 0$. This distinction between symmetric (triplet) and antisymmetric (singlet) spin configurations is fundamental to the structure of multi-electron atoms and the nature of chemical bonding.
 
 ---
@@ -255,20 +312,27 @@ Applying $\hat{S}^2$ yields the eigenvalue $0(0+1)\hbar^2 = 0$. This distinction
 ### 3.1. Quantum Superposition and Tensor Products
 
 The principle of linear superposition, central to the description of single quantum systems, extends naturally to composite systems. For a single two-level system, any superposition $\alpha_0|0\rangle + \alpha_1|1\rangle$ constitutes a valid state. Analogously, for a composite system of two qubits, the superposition principle dictates that any linear combination of the basis states is a valid physical state,
+
 $$
 |\Psi_{12}\rangle = \alpha_{00}|00\rangle + \alpha_{01}|01\rangle + \alpha_{10}|10\rangle + \alpha_{11}|11\rangle.
 $$
+
 The mathematical framework for describing such composite spaces is the tensor product. If $\mathcal{H}_1$ and $\mathcal{H}_2$ are the Hilbert spaces of two individual systems, the joint space is $\mathcal{H}_{12} = \mathcal{H}_1 \otimes \mathcal{H}_2$.
 
 The tensor product of vectors is defined component-wise. If $|\psi_1\rangle = (\alpha_1, \beta_1)^T$ and $|\psi_2\rangle = (\alpha_2, \beta_2)^T$, their tensor product is,
+
 $$
 |\psi_1\rangle \otimes |\psi_2\rangle = \begin{pmatrix} \alpha_1 \\ \beta_1 \end{pmatrix} \otimes \begin{pmatrix} \alpha_2 \\ \beta_2 \end{pmatrix} = \begin{pmatrix} \alpha_1 \alpha_2 \\ \alpha_1 \beta_2 \\ \beta_1 \alpha_2 \\ \beta_1 \beta_2 \end{pmatrix}.
 $$
+
 Operators on the composite space also follow the tensor product structure. For operators $A$ and $B$ acting on $\mathcal{H}_1$ and $\mathcal{H}_2$ respectively, the operation $A \otimes B$ is represented by the block matrix,
+
 $$
 A \otimes B = \begin{pmatrix} A_{11}B & A_{12}B \\ A_{21}B & A_{22}B \end{pmatrix}.
 $$
+
 Crucially, the tensor product satisfies specific algebraic properties, such as distributivity, $A \otimes (B+C) = A \otimes B + A \otimes C$, and the mixed-product property,
+
 $$
 (A \otimes B)(C \otimes D) = (AC) \otimes (BD).
 $$
@@ -278,37 +342,47 @@ $$
 A pure state $|\psi_{12}\rangle \in \mathcal{H}_{12}$ is strictly defined as **separable** (or a product state) if it can be factorized into the form $|\psi_{12}\rangle = |\psi_1\rangle \otimes |\psi_2\rangle$. Any state that cannot be written in this form is **entangled**.
 
 The canonical examples of entanglement in bipartite qubit systems are the Bell states, which form an orthonormal basis for $\mathcal{H}_{12}$,
+
 $$
 |\phi^{\pm}\rangle = \frac{1}{\sqrt{2}}(|00\rangle \pm |11\rangle), \quad |\psi^{\pm}\rangle = \frac{1}{\sqrt{2}}(|01\rangle \pm |10\rangle).
 $$
+
 To rigorously determine if a general pure state is entangled, one employs the **Schmidt decomposition**. Any pure bipartite state can be decomposed as,
+
 $$
 |\psi_{AB}\rangle = \sum_{i=1}^{\min(d_A, d_B)} \sqrt{\lambda_i} \, |u_i\rangle_A \otimes |v_i\rangle_B,
 $$
+
 where $\sqrt{\lambda_i}$ are the Schmidt coefficients (satisfying $\sum \lambda_i = 1$), and $\{|u_i\rangle\}$ and $\{|v_i\rangle\}$ are orthonormal bases for subsystems $A$ and $B$. The entanglement criterion is straightforward: a pure state is entangled if and only if its Schmidt rank (the number of non-zero $\lambda_i$) is greater than one.
 
 ### 3.3. Mixed State Entanglement
 
 For mixed states described by a density operator $\rho$, the definition of entanglement is more subtle. A mixed state is **separable** if it can be expressed as a convex mixture of product states,
+
 $$
 \rho_{\text{sep}} = \sum_j p_j \, \rho_j \otimes \eta_j,
 $$
+
 where $p_j \ge 0$ and $\sum p_j = 1$. If no such decomposition exists, the state is entangled. It is important to distinguish entanglement from purity; the maximally mixed state $\frac{1}{4}\mathbb{I}$ is separable, whereas the pure singlet state $|\psi^-\rangle$ is maximally entangled.
 
 **The Partial Transposition (PPT) Criterion**
 Detecting entanglement in mixed states is generally non-trivial. However, for systems of dimension $2 \times 2$ and $2 \times 3$, the Peres-Horodecki criterion provides a necessary and sufficient condition. The partial transpose of $\rho$ with respect to subsystem $B$, denoted $\rho^{\Gamma_B}$, is defined by its action on the basis elements,
+
 $$
 \left( |i\rangle\langle j| \otimes |k\rangle\langle l| \right)^{\Gamma_B} \equiv |i\rangle\langle j| \otimes (|k\rangle\langle l|)^T = |i\rangle\langle j| \otimes |l\rangle\langle k|.
 $$
+
 In terms of matrix elements, this operation swaps the indices of the second subsystem: $(\rho^{\Gamma_B})_{ij,kl} = \rho_{ij,lk}$.
 * **Criterion:** If $\rho$ is separable, then $\rho^{\Gamma_B}$ must be a valid density operator (positive semi-definite). Conversely, if $\rho^{\Gamma_B}$ possesses at least one negative eigenvalue, $\rho$ is entangled.
 
 ### 3.4. Marginal States and the Partial Trace
 
 When an observer has access only to a subsystem (say, Alice with system $A$) of a composite state $\rho_{AB}$, her local description is given by the reduced density matrix $\rho_A$. This is obtained via the partial trace operation,
+
 $$
 \rho_A = \text{Tr}_B(\rho_{AB}) = \sum_b \langle b|_B \, \rho_{AB} \, |b\rangle_B,
 $$
+
 where $\{|b\rangle\}$ is an orthonormal basis for system $B$. This operation corresponds to averaging over all possible measurement outcomes of system $B$.
 
 A fundamental feature of this formalism is the "peaceful coexistence" of quantum mechanics and special relativity. The probability of any outcome for a measurement performed by Alice is determined solely by $\rho_A$. Since $\rho_A$ is invariant under unitary operations or measurements performed by Bob on system $B$ (a consequence of the trace property), Bob cannot use entanglement to signal Alice instantaneously.
@@ -320,13 +394,17 @@ There is a direct link between marginal purity and entanglement:
 ### 3.5. Correlations and the Generalized Bloch Representation
 
 Entanglement manifests physically as correlations between measurement outcomes that exceed those possible in classical physics. Any $N$-qubit density matrix can be expanded in the basis of Pauli operators,
+
 $$
 \rho = \frac{1}{2^N} \sum_{\mu_1, \dots, \mu_N = 0}^3 T_{\mu_1 \dots \mu_N} \, \sigma_{\mu_1} \otimes \dots \otimes \sigma_{\mu_N},
 $$
+
 where the coefficients $T_{\mu_1 \dots \mu_N} = \text{Tr}(\rho \, \sigma_{\mu_1} \otimes \dots \otimes \sigma_{\mu_N})$ form the correlation tensor. The quantum correlation function for measurements along directions $\vec{n}_1, \dots, \vec{n}_N$ is given by,
+
 $$
 C(\vec{n}_1, \dots, \vec{n}_N) = \langle (\vec{n}_1 \cdot \vec{\sigma}) \otimes \dots \otimes (\vec{n}_N \cdot \vec{\sigma}) \rangle = \sum_{\mu_1 \dots \mu_N} T_{\mu_1 \dots \mu_N} n_1^{\mu_1} \dots n_N^{\mu_N}.
 $$
+
 For the singlet state $|\psi^-\rangle$, the correlation function is $C(\vec{a}, \vec{b}) = -\vec{a} \cdot \vec{b}$. This implies perfect anti-correlation regardless of the measurement basis, provided both observers measure along the same direction. A known condition for separability is $\sum_{j,k=1}^3 T_{jk}^2 \le 1$. The singlet state violates this bound maximally ($\sum T_{jk}^2 = 3$), serving as a quantitative witness of its entanglement.
 
 ### 3.6. Multipartite Entanglement and Activation
@@ -345,17 +423,23 @@ An intriguing phenomenon in multipartite systems is **entanglement activation**.
 ### 4.1. The Two-Body Problem and Center of Mass Separation
 
 The quantum description of two interacting particles is governed by the Hamiltonian,
+
 $$
 H = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{\hbar^2}{2m_2}\nabla_2^2 + V(|\vec{r}_1 - \vec{r}_2|).
 $$
+
 Analogous to classical mechanics, this problem can be simplified by transforming to center-of-mass ($\vec{R}$) and relative ($\vec{r}$) coordinates,
+
 $$
 \vec{R} = \frac{m_1 \vec{r}_1 + m_2 \vec{r}_2}{m_1 + m_2}, \quad \vec{r} = \vec{r}_1 - \vec{r}_2.
 $$
+
 This transformation decouples the Hamiltonian into two independent parts: a free particle term for the center of mass with total mass $M = m_1 + m_2$, and a single-particle term for the relative motion with reduced mass $\mu = \frac{m_1 m_2}{m_1 + m_2}$,
+
 $$
 H = -\frac{\hbar^2}{2M}\nabla_R^2 - \frac{\hbar^2}{2\mu}\nabla_r^2 + V(r).
 $$
+
 Consequently, the total energy is the sum $E = E_R + E_r$. For bound states (like the Hydrogen atom), minimizing the total energy implies setting $E_R = 0$. The binding energy is then determined solely by the relative Hamiltonian, with the electron mass replaced by the reduced mass $\mu$. For Hydrogen, this correction is small ($\sim 0.05\%$), but for Positronium, where $m_1=m_2$, the reduced mass is $m/2$, halving the binding energy compared to Hydrogen.
 
 ### 4.2. Symmetrization and The Pauli Principle
@@ -365,6 +449,7 @@ For identical particles, the physical state must be invariant under the exchange
 * **Fermions:** Particles with half-integer spin (e.g., electrons) have antisymmetric wavefunctions ($\hat{P}\psi = -\psi$).
 
 This antisymmetry requirement leads to the **Pauli Exclusion Principle**: two identical fermions cannot occupy the same quantum state. If $\psi(\vec{r}_1, \vec{r}_2) = \psi_a(\vec{r}_1)\psi_a(\vec{r}_2)$, antisymmetrization yields zero. For $N$ fermions, the wavefunction is constructed as a **Slater Determinant**,
+
 $$
 \Psi(x_1, \dots, x_N) = \frac{1}{\sqrt{N!}} \det \begin{pmatrix} \chi_1(x_1) & \dots & \chi_N(x_1) \\ \vdots & \ddots & \vdots \\ \chi_1(x_N) & \dots & \chi_N(x_N) \end{pmatrix}.
 $$
@@ -372,9 +457,11 @@ $$
 ### 4.3. Exchange Forces
 
 The symmetry requirements of the wavefunction lead to effective spatial correlations known as exchange forces. For two particles in states $\psi_a$ and $\psi_b$, the expectation value of the squared separation distance is,
+
 $$
 \langle (\Delta x)^2 \rangle_{\pm} = \langle (\Delta x)^2 \rangle_{dist} \mp 2 |\langle x \rangle_{ab}|^2,
 $$
+
 where $\langle x \rangle_{ab}$ is the overlap integral $\int x \psi_a^*(x)\psi_b(x) dx$.
 * **Bosons ($-$ sign):** The effective distance is reduced, implying an effective "attraction" or bunching.
 * **Fermions ($+$ sign):** The effective distance is increased, implying an effective "repulsion". This prevents fermions from occupying the same region of space, providing the pressure that supports white dwarf stars (degeneracy pressure) and dictating the structure of electron shells.
@@ -411,17 +498,21 @@ Quantum mechanics also explains molecular shapes through orbital alignment. For 
 
 ### 5.1. General Formulation
 
-Perturbation theory provides a systematic method for approximating the eigenvalues and eigenstates of a Hamiltonian $\hat{H}$ that can be decomposed into a solvable part $\hat{H}^0$ and a small perturbation $\hat{H}'$, such that $\hat{H} = \hat{H}^0 + \lambda \hat{H}'$, where $\lambda$ is a dimensionless parameter ranging from 0 to 1. We assume the eigensystem of the unperturbed Hamiltonian is known:
+Perturbation theory provides a systematic method for approximating the eigenvalues and eigenstates of a Hamiltonian $\hat{H}$ that can be decomposed into a solvable part $\hat{H}^0$ and a small perturbation $\hat{H}'$, such that $\hat{H} = \hat{H}^0 + \lambda \hat{H}'$, where $\lambda$ is a dimensionless parameter ranging from 0 to 1. We assume the eigensystem of the unperturbed Hamiltonian is known,
+
 $$
 \hat{H}^0 |n^0\rangle = E_n^0 |n^0\rangle,
 $$
-where the set $\{|n^0\rangle\}$ forms a complete orthonormal basis, satisfying $\langle m^0 | n^0 \rangle = \delta_{mn}$. We seek approximate solutions to the full eigenvalue problem $\hat{H} |\psi_n\rangle = E_n |\psi_n\rangle$ by expanding the energy eigenvalues and eigenstates as power series in $\lambda$:
+
+where the set $\{|n^0\rangle\}$ forms a complete orthonormal basis, satisfying $\langle m^0 | n^0 \rangle = \delta_{mn}$. We seek approximate solutions to the full eigenvalue problem $\hat{H} |\psi_n\rangle = E_n |\psi_n\rangle$ by expanding the energy eigenvalues and eigenstates as power series in $\lambda$,
+
 $$
 \begin{aligned}
 E_n &= E_n^0 + \lambda E_n^1 + \lambda^2 E_n^2 + \dots \\
 |\psi_n\rangle &= |n^0\rangle + \lambda |n^1\rangle + \lambda^2 |n^2\rangle + \dots
 \end{aligned}
 $$
+
 Substituting these expansions into the Schrödinger equation and collecting terms of equal power in $\lambda$ yields a hierarchy of linear equations.
 * **Order $\lambda^0$:** $\hat{H}^0 |n^0\rangle = E_n^0 |n^0\rangle$ (The unperturbed problem).
 * **Order $\lambda^1$:** $\hat{H}^0 |n^1\rangle + \hat{H}' |n^0\rangle = E_n^0 |n^1\rangle + E_n^1 |n^0\rangle$.
@@ -433,21 +524,26 @@ For a non-degenerate energy level $E_n^0$, the corrections are derived by projec
 
 **First-Order Corrections:**
 Taking the inner product of the first-order equation with $\langle n^0|$ gives the first-order energy correction,
+
 $$
 E_n^1 = \langle n^0 | \hat{H}' | n^0 \rangle.
 $$
 
 This result states that the first-order shift is simply the expectation value of the perturbation in the unperturbed state. To find the first-order state correction $|n^1\rangle$, we project the first-order equation onto $\langle m^0|$ (where $m \neq n$),
+
 $$
 |n^1\rangle = \sum_{m \neq n} \frac{\langle m^0 | \hat{H}' | n^0 \rangle}{E_n^0 - E_m^0} |m^0\rangle.
 $$
+
 This formula is valid provided $E_n^0 \neq E_m^0$ for all $m \neq n$, highlighting the necessity of non-degeneracy.
 
 **Second-Order Energy Correction:**
 Taking the inner product of the second-order equation with $\langle n^0|$ yields,
+
 $$
 E_n^2 = \langle n^0 | \hat{H}' | n^1 \rangle = \sum_{m \neq n} \frac{|\langle m^0 | \hat{H}' | n^0 \rangle|^2}{E_n^0 - E_m^0}.
 $$
+
 This term captures the effect of level repulsion: energy levels repel each other, with the ground state energy always being lowered in second-order perturbation theory.
 
 ### 5.3. Degenerate Perturbation Theory
@@ -456,9 +552,11 @@ If the unperturbed energy level $E_n^0$ is $g$-fold degenerate, the denominator 
 Any linear combination within $D$ is an eigenstate of $\hat{H}^0$ with eigenvalue $E_n^0$. The perturbation $\hat{H}'$ typically lifts this degeneracy. To find the split energy levels and the correct "good" zeroth-order eigenstates, we must diagonalize $\hat{H}'$ within the degenerate subspace.
 
 We construct the perturbation matrix $W$ with elements,
+
 $$
 W_{ij} = \langle n^0_i | \hat{H}' | n^0_j \rangle, \quad i, j = 1, \dots, g.
 $$
+
 Solving the eigenvalue problem for $W$ yields $g$ eigenvalues, which correspond to the first-order energy corrections $E_{n, \alpha}^1$ for the split levels. The eigenvectors of $W$ define the basis states in $D$ that are stable under the perturbation.
 
 **Theorem:** If there exists a Hermitian operator $\hat{A}$ such that $[\hat{A}, \hat{H}'] = 0$ and $[\hat{A}, \hat{H}^0] = 0$, and if the degenerate states $\{|n^0_i\rangle\}$ are distinct eigenstates of $\hat{A}$, then the matrix $W$ is automatically diagonal. These simultaneous eigenstates are the correct zeroth-order states for perturbation theory.
@@ -468,44 +566,56 @@ Solving the eigenvalue problem for $W$ yields $g$ eigenvalues, which correspond 
 The fine structure of the hydrogen atom spectrum arises from relativistic corrections to the kinetic energy and the spin-orbit interaction. These effects are of order $\alpha^2 E_n^0$, where $\alpha \approx 1/137$ is the fine-structure constant.
 
 **Relativistic Kinetic Energy Correction:**
-The relativistic kinetic energy is $T = \sqrt{p^2 c^2 + m^2 c^4} - mc^2$. Expanding for $p \ll mc$ yields the zeroth-order term $p^2/2m$ and the first perturbative correction,
+The relativistic kinetic energy is $T = \sqrt{p^2 c^2 + m^2 c^4} - mc^2$. Expanding for $p \ll mc$ yields the zeroth-order term $p^2/2m$ and the first perturbation correction,
+
 $$
 \hat{H}'_{rel} = -\frac{\hat{p}^4}{8m^3 c^2}.
 $$
+
 The energy shift is calculated using first-order perturbation theory on the hydrogenic states $|n, l, m\rangle$.
 
 **Spin-Orbit Coupling:**
 From the rest frame of the electron, the nucleus orbits around it, generating a magnetic field $\vec{B}$ that interacts with the electron's spin magnetic moment. This interaction is described by,
+
 $$
 \hat{H}'_{so} = \frac{e^2}{8\pi\epsilon_0 m^2 c^2 r^3} \hat{\vec{S}} \cdot \hat{\vec{L}}.
 $$
+
 This term does not commute with $\hat{\vec{L}}$ or $\hat{\vec{S}}$ separately, but it does commute with the total angular momentum $\hat{\vec{J}} = \hat{\vec{L}} + \hat{\vec{S}}$. We use the identity $\hat{\vec{L}} \cdot \hat{\vec{S}} = \frac{1}{2} (\hat{\vec{J}}^2 - \hat{\vec{L}}^2 - \hat{\vec{S}}^2)$ to evaluate the expectation values.
-Combining both corrections yields the total fine-structure energy shift for state $|n, j\rangle$:
+Combining both corrections yields the total fine-structure energy shift for state $|n, j\rangle$,
+
 $$
 E_{fs}^1 = \frac{(E_n^0)^2}{2mc^2} \left( 3 - \frac{4n}{j+1/2} \right).
 $$
+
 The total energy levels are given by $E_{nj} = E_n^0 [1 + \frac{\alpha^2}{n^2} (\frac{n}{j+1/2} - \frac{3}{4})]$. This result breaks the $l$-degeneracy of the Bohr model, making energy dependent on total angular momentum $j$.
 
 ### 5.5. Application: The Zeeman Effect
 
 The Zeeman effect describes the splitting of atomic energy levels in an external magnetic field $\vec{B}_{ext} = B_{ext} \hat{z}$. The interaction Hamiltonian is,
+
 $$
 \hat{H}'_Z = -(\vec{\mu}_l + \vec{\mu}_s) \cdot \vec{B}_{ext} = \frac{e B_{ext}}{2m} (\hat{L}_z + 2\hat{S}_z).
 $$
+
 The nature of the splitting depends on the strength of $B_{ext}$ relative to the internal magnetic field of the atom ($B_{int}$) responsible for spin-orbit coupling.
 
 **Weak-Field Zeeman Effect ($B_{ext} \ll B_{int}$):**
 The fine structure dominates. The good quantum numbers are $n, l, j, m_j$. The Zeeman term is treated as a perturbation on the fine-structure states. Since $\hat{L}_z + 2\hat{S}_z = \hat{J}_z + \hat{S}_z$, we project $\hat{S}_z$ onto $\hat{J}_z$ using the Wigner-Eckart theorem (or the vector model projection $\vec{S}_{avg} = \frac{(\vec{S}\cdot\vec{J})}{J^2}\vec{J}$). The energy shift is,
+
 $$
 E_Z^1 = \mu_B g_J B_{ext} m_j,
 $$
+
 where $\mu_B$ is the Bohr magneton and $g_J = 1 + \frac{j(j+1) - l(l+1) + 3/4}{2j(j+1)}$ is the Landé g-factor.
 
 **Strong-Field Zeeman Effect (Paschen-Back Effect, $B_{ext} \gg B_{int}$):**
 The external field dominates, decoupling $\vec{L}$ and $\vec{S}$. The good quantum numbers are $n, l, m_l, m_s$. The Hamiltonian is dominated by the Zeeman term, with spin-orbit coupling treated as a perturbation. The energy shift is,
+
 $$
 E_Z^1 = \mu_B B_{ext} (m_l + 2m_s).
 $$
+
 This linear splitting differs significantly from the weak-field regime, recovering the "normal" Zeeman triplet only if spin is neglected.
 
 ---
@@ -515,38 +625,50 @@ This linear splitting differs significantly from the weak-field regime, recoveri
 ### 6.1. General Formalism
 
 In time-dependent perturbation theory, we consider a Hamiltonian $\hat{H}(t) = \hat{H}^0 + \hat{H}'(t)$, where $\hat{H}^0$ is the time-independent unperturbed Hamiltonian with known eigenstates $|n\rangle$ and eigenvalues $E_n$. The time-dependent perturbation $\hat{H}'(t)$ is assumed to be small. We expand the general state $|\Psi(t)\rangle$ in the basis of the unperturbed eigenstates, with time-dependent coefficients $c_n(t)$,
+
 $$
 |\Psi(t)\rangle = \sum_n c_n(t) e^{-iE_n t / \hbar} |n\rangle.
 $$
+
 Substituting this ansatz into the time-dependent Schrödinger equation $i\hbar \frac{\partial}{\partial t} |\Psi(t)\rangle = \hat{H}(t) |\Psi(t)\rangle$ and projecting onto a specific state $\langle b|$, we obtain a set of coupled differential equations for the coefficients,
+
 $$
 i\hbar \dot{c}_b(t) = \sum_n c_n(t) H'_{bn}(t) e^{i\omega_{bn}t},
 $$
+
 where $H'_{bn}(t) = \langle b | \hat{H}'(t) | n \rangle$ and $\omega_{bn} = (E_b - E_n)/\hbar$.
 
 **First-Order Approximation:**
 Assuming the system starts in a specific initial state $|a\rangle$ at $t=0$, we have $c_a(0) = 1$ and $c_b(0) = 0$ for $b \neq a$. For weak perturbations, the populations do not change significantly over short times, so we approximate $c_n(t) \approx \delta_{na}$ on the right-hand side. The first-order equation for the coefficient of a target state $|b\rangle$ becomes,
+
 $$
 \dot{c}_b(t) \approx -\frac{i}{\hbar} H'_{ba}(t) e^{i\omega_{ba}t}.
 $$
+
 Integrating this expression yields the first-order amplitude,
+
 $$
 c_b^{(1)}(t) = -\frac{i}{\hbar} \int_0^t H'_{ba}(t') e^{i\omega_{ba}t'} dt'.
 $$
+
 The transition probability from state $|a\rangle$ to state $|b\rangle$ is then $P_{a \to b}(t) = |c_b^{(1)}(t)|^2$.
 
 ### 6.2. Sinusoidal Perturbation and Fermi's Golden Rule
 
 Consider a perturbation that oscillates sinusoidally in time, $\hat{H}'(t) = \hat{V} \cos(\omega t)$, which is turned on at $t=0$. The matrix element is $H'_{ba}(t) = V_{ba} \cos(\omega t)$. The transition amplitude becomes,
+
 $$
 c_b(t) = -\frac{V_{ba}}{2\hbar} \left[ \frac{e^{i(\omega_{ba} + \omega)t} - 1}{\omega_{ba} + \omega} + \frac{e^{i(\omega_{ba} - \omega)t} - 1}{\omega_{ba} - \omega} \right].
 $$
+
 Near resonance, where the driving frequency $\omega$ is close to the transition frequency $\omega_{ba} = (E_b - E_a)/\hbar$, the second term (involving the small denominator $\omega_{ba} - \omega$) dominates. This is known as the **Rotating Wave Approximation**. Neglecting the first term, the transition probability is,
+
 $$
 P_{a \to b}(t) \approx \frac{|V_{ba}|^2}{\hbar^2} \frac{\sin^2[(\omega_{ba} - \omega)t/2]}{(\omega_{ba} - \omega)^2}.
 $$
 
-This function is peaked at $\omega = \omega_{ba}$ with a height proportional to $t^2$ and a width proportional to $1/t$. For large times, the function $\frac{\sin^2(xt)}{x^2} \to \pi t \delta(x)$, leading to **Fermi's Golden Rule** for the transition rate $R$:
+This function is peaked at $\omega = \omega_{ba}$ with a height proportional to $t^2$ and a width proportional to $1/t$. For large times, the function $\frac{\sin^2(xt)}{x^2} \to \pi t \delta(x)$, leading to **Fermi's Golden Rule** for the transition rate $R$,
+
 $$
 R_{a \to b} = \lim_{t \to \infty} \frac{P_{a \to b}(t)}{t} = \frac{2\pi}{\hbar} |V_{ba}|^2 \delta(E_b - E_a - \hbar\omega).
 $$
@@ -554,13 +676,17 @@ $$
 ### 6.3. Two-Level Systems and Rabi Oscillations
 
 For a two-level system subjected to a near-resonant sinusoidal field, we can solve the dynamics exactly without resorting to first-order perturbation theory (which breaks down when $P(t)$ approaches 1). In the Rotating Wave Approximation, the coupled equations for a two-level system with detuning $\Delta = \omega - \omega_0$ are,
+
 $$
 i\dot{c}_a = \frac{V_{ab}^*}{2\hbar} e^{i\Delta t} c_b, \quad i\dot{c}_b = \frac{V_{ba}}{2\hbar} e^{-i\Delta t} c_a.
 $$
+
 The solution for a system starting in the ground state $|a\rangle$ describes oscillations in the population of the excited state $|b\rangle$:
+
 $$
 P_{a \to b}(t) = \frac{\Omega^2}{\Omega^2 + \Delta^2} \sin^2\left( \frac{\sqrt{\Omega^2 + \Delta^2}}{2} t \right),
 $$
+
 where $\Omega = |V_{ba}|/\hbar$ is the **Rabi Frequency**.
 * **On Resonance ($\Delta = 0$):** The system undergoes full contrast oscillations between ground and excited states: $P_{a \to b}(t) = \sin^2(\Omega t/2)$.
 * **Off Resonance ($\Delta \neq 0$):** The amplitude of oscillation decreases and the frequency increases ("generalized Rabi frequency"). The system never fully reaches the excited state.
@@ -568,9 +694,11 @@ where $\Omega = |V_{ba}|/\hbar$ is the **Rabi Frequency**.
 ### 6.4. Light-Matter Interaction and Einstein Coefficients
 
 We apply time-dependent perturbation theory to the interaction of an atom with incoherent, broadband electromagnetic radiation (like thermal light). The transition rate for stimulated emission or absorption is given by,
+
 $$
 R_{b \to a} = R_{a \to b} = \frac{\pi}{3\epsilon_0 \hbar^2} |\vec{d}|^2 \rho(\omega_0),
 $$
+
 where $\vec{d} = \langle b | q\vec{r} | a \rangle$ is the electric dipole moment and $\rho(\omega_0)$ is the spectral energy density of the field at the transition frequency.
 
 Einstein derived the relationship between the rates of absorption ($B_{ab}$), stimulated emission ($B_{ba}$), and spontaneous emission ($A$) by considering atoms in thermal equilibrium with blackbody radiation.
@@ -591,13 +719,17 @@ This formula quantifies the rate at which an excited atom decays to the ground s
 ### 7.1. The Equivalence Principle in Quantum Mechanics
 
 In classical mechanics, the motion of a particle in a gravitational field is mass-independent because the inertial mass $m_i$ (in $F=m_i a$) cancels the gravitational mass $m_g$ (in $F=m_g g$).
+
 $$
 m_i \ddot{\vec{r}} = -m_g g \hat{k} \implies \ddot{\vec{r}} = -g \hat{k}.
 $$
+
 However, in quantum mechanics, the situation is more subtle. The Schrödinger equation for a particle in a gravitational potential $V = m_g g z$ is,
+
 $$
 \left[ -\frac{\hbar^2}{2m_i} \nabla^2 + m_g g z \right] \psi = i\hbar \frac{\partial \psi}{\partial t}.
 $$
+
 Mass does not cancel out here. It appears in the length scale and time scale of the evolution. This mass-dependence allows for non-trivial quantum interference effects that have no classical analogue.
 
 ### 7.2. The COW Experiment (Colella, Overhauser, Werner, 1975)
@@ -615,17 +747,23 @@ A monochromatic beam of neutrons (wavelength $\lambda$) is split into two paths 
 The phase accumulated by a particle with energy $E$ and momentum $p$ along a path is $\Phi = \frac{1}{\hbar} \int \vec{p} \cdot d\vec{r}$.
 The potential difference between the upper and lower paths is $\Delta V = m_g g H$, where the height difference is $H = L \sin\phi$.
 This potential difference causes a difference in the local momentum (and wavelength) of the neutrons on the two paths.
+
 $$
 p_{upper} \approx p_0 \left( 1 - \frac{m_g g H}{2 E_0} \right), \quad p_{lower} = p_0.
 $$
+
 The resulting phase difference is,
+
 $$
 \Delta \Phi_{grav} = \frac{1}{\hbar} (p_{lower} - p_{upper}) L = \frac{1}{\hbar} \frac{p_0 m_g g H}{2 E_0} L.
 $$
-Using $E_0 = p_0^2 / 2m_i$ and $\lambda = h/p_0$, we obtain the famous formula:
+
+Using $E_0 = p_0^2 / 2m_i$ and $\lambda = h/p_0$, we obtain the famous formula,
+
 $$
 \Delta \Phi_{grav} = \frac{m_i m_g g \lambda L^2 \sin\phi}{\hbar^2}.
 $$
+
 **Experimental Result:**
 The experiment observed a sinusoidal variation in neutron intensity as the angle $\phi$ was varied, matching the predicted phase shift. This confirmed that the gravitational potential acts as a standard potential in the Schrödinger equation and that the Equivalence Principle holds in the quantum regime (to within 1%).
 
@@ -634,24 +772,32 @@ The experiment observed a sinusoidal variation in neutron intensity as the angle
 This experiment demonstrated the quantization of energy levels for a particle bound by gravity. Ultra-cold neutrons are allowed to fall towards a horizontal mirror.
 
 **The Potential:**
-The system is modeled as a "triangular well" (linear potential with an infinite wall):
+The system is modeled as a "triangular well" (linear potential with an infinite wall),
+
 $$
 V(z) = \begin{cases} m_g g z & z > 0 \\ \infty & z \le 0 \end{cases}
 $$
+
 **The Schrödinger Equation:**
 The time-independent equation for the vertical motion is,
+
 $$
 -\frac{\hbar^2}{2m_i} \frac{d^2 \psi}{dz^2} + m_g g z \psi = E \psi.
 $$
-By introducing the characteristic length scale $l_0 = (\frac{\hbar^2}{2 m_i m_g g})^{1/3}$ and scaled energy $\epsilon = E / (m_g g l_0)$, the equation transforms into the **Airy Equation**:
+
+By introducing the characteristic length scale $l_0 = (\frac{\hbar^2}{2 m_i m_g g})^{1/3}$ and scaled energy $\epsilon = E / (m_g g l_0)$, the equation transforms into the **Airy Equation**,
+
 $$
 \frac{d^2 \psi}{d\xi^2} - \xi \psi = 0, \quad \text{where } \xi = \frac{z}{l_0} - \epsilon.
 $$
+
 **Solution and Quantization:**
 The solutions are Airy functions, $\psi(z) \propto \text{Ai}(\frac{z}{l_0} - \epsilon)$. The boundary condition $\psi(0) = 0$ (at the mirror surface) requires that $-\epsilon$ must be a zero of the Airy function ($a_n$).
+
 $$
 \text{Ai}(-\epsilon_n) = 0 \implies E_n = - E_0 a_n, \quad \text{where } E_0 = \left( \frac{m_g^2 g^2 \hbar^2}{2 m_i} \right)^{1/3}.
 $$
+
 For neutrons ($m \approx 1.67 \times 10^{-27}$ kg), the energy scale is $E_0 \approx 0.6$ peV.
 The discrete energy levels are:
 * $n=1$: $E_1 \approx 1.4$ peV (Classical turning point $z_1 \approx 13.7 \, \mu\text{m}$)
