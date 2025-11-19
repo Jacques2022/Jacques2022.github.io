@@ -4,7 +4,7 @@ SEOTitle: Homepage - H. Shen
 header-img: img/home-bg.jpg
 email: z2211603596@gmail.com
 description: "This is the homepage of H. Shen. (Beta Test)"
-keyword: "Lab3, Log, Water Wave, Optics"
+keyword: "Physics, Optics"
 url: "https://jacques2022.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -16,7 +16,7 @@ RSS: false
 # weibo_username: huxpro
 # zhihu_username: huxpro
 github_username: Jacques2022
-# twitter_username: huxpro
+twitter_username: xmum2022
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -91,6 +91,6 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "XMUM", href: "https://www.xmu.edu.my" },
-    { title: "Group Homepage", href: "https://kenyon.xmu.edu.cn" },
+    { title: "XMUM Physics", href: "https://phys.xmu.edu.my" },
+    { title: "Chen Group", href: "https://kenyon.xmu.edu.cn" },
   ]
