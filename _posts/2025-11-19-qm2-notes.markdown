@@ -12,7 +12,8 @@ tags:
     - Note
 ---
 
-> In physics, we only hate what we don't understand. Clarity eventually leads to love. ———— Dr. K. W. Song
+> In physics, we only hate what we don't understand. Clarity eventually leads to love.  
+> ———— Dr. K. W. Song
 
 # A Crash Course in Quantum Mechanics
 
