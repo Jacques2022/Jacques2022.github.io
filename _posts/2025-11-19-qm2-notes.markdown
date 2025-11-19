@@ -5,11 +5,12 @@ subtitle:   "A revision note for QM exams."
 date:       2025-11-19 14:35:08
 author:     "H. Shen"
 header-img: "img/post-bg-xmum.jpg"
-catalog: true
+catalog:    true
 tags:
     - Physics
     - Quantum
     - Note
+mathjax:    true
 ---
 
 > In physics, we only hate what we don't understand. Clarity eventually leads to love.  
