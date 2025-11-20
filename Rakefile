@@ -38,7 +38,7 @@ task :post do
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "subtitle: \"#{subtitle.gsub(/-/,' ')}\""
     post.puts "date: #{date}"
-    post.puts "author: \"Hux\""
+    post.puts "author: \"H. Shen\""
     post.puts "header-img: \"img/post-bg-2015.jpg\""
     post.puts "tags: []"
     post.puts "---"
@@ -47,7 +47,7 @@ end # task :post
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll --auto --server"
+  system "bundle exec jekyll serve"
 end # task :preview
 
 #Load custom rake scripts
