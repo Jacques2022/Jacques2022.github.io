@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "A Crash Course in Quantum Mechanics"
+title:      "A Crash Course for Quantum Mechanics"
 subtitle:   "A revision note for QM exams."
 date:       2025-11-19 14:35:08
 author:     "H. Shen"
@@ -60,7 +60,7 @@ Quantum mechanics is formulated in **Hilbert Space**, a complex vector space wit
     \langle \psi \vert  = (c_1^*, c_2^*, \dots, c_n^*).
     $$
 
-* **Inner Product:** The inner product $\langle \phi \vert  \psi \rangle$ is a complex number, generalizing the dot product. It satisfies $\langle \phi \vert  \psi \rangle = \langle \psi \vert  \phi \rangle^*$.
+* **Inner Product:** The inner product $\langle \phi \vert  \psi \rangle$ is a complex number, generalizing the dot product. It satisfies $\langle \phi \vert  \psi \rangle = \langle \psi \vert  \phi \rangle^*$,
 
     $$
     \langle \phi \vert  \psi \rangle = \sum_{i} b_i^* c_i.
