@@ -15,7 +15,7 @@ tags:
 > In physics, we only hate what we don't understand. Clarity eventually leads to love.  
 > ———— Dr. K. W. Song
 
-# A Crash Course in Quantum Mechanics
+# A Crash Course for Quantum Mechanics
 
 This is a revision note from course **PHY310@[XMUM](https://phys.xmu.edu.my) Quantum Mechanics II** by [Prof. Tomasz Paterek](https://scholar.google.com/citations?user=Ag1AIewAAAAJ&hl=en&oi=ao).
 
